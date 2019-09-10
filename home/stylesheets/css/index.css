@@ -1,0 +1,17 @@
+@font-face { font-family: 'Gotham Book'; font-style: normal; font-weight: normal; src: url("../../font/GothamBook.woff") format("woff"); }
+@font-face { font-family: 'Gotham Light'; font-style: normal; font-weight: normal; src: url("../../font/GothamLight.woff") format("woff"); }
+@font-face { font-family: 'Gotham Medium'; font-style: normal; font-weight: normal; src: url("../../font/GothamMedium.woff") format("woff"); }
+@font-face { font-family: 'Gotham Medium'; font-style: normal; font-weight: normal; src: url("../../font/GothamMedium_1.woff") format("woff"); }
+@font-face { font-family: 'Gotham Bold'; font-style: normal; font-weight: normal; src: url("../../font/GothamBold.woff") format("woff"); }
+@font-face { font-family: 'Gotham Bold'; font-style: normal; font-weight: normal; src: url("../../font/Gotham-Bold.woff") format("woff"); }
+@font-face { font-family: 'Gotham Light Regular'; font-style: normal; font-weight: normal; src: url("../../font/Gotham-Light.woff") format("woff"); }
+@font-face { font-family: 'Gotham Thin Regular'; font-style: normal; font-weight: normal; src: url("../../font/Gotham-Thin.woff") format("woff"); }
+@font-face { font-family: 'Gotham XLight Regular'; font-style: normal; font-weight: normal; src: url("../../font/Gotham-XLight.woff") format("woff"); }
+html { font-size: 16pt; -webkit-font-smoothing: antialiased; -moz-osx-font-smoothing: grayscale; text-rendering: optimizeLegibility; }
+
+.container { width: 100%; height: calc(100vh - 16.75rem); padding: 0 4% 0 4%; position: relative; -webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box; overflow: hidden; }
+.container img { width: 100%; display: block; }
+
+@media screen and (min-width: 768px) and (max-width: 1600px) { html { font-size: 14px; } }
+
+/*# sourceMappingURL=index.css.map */

@@ -1,0 +1,28 @@
+@import '../../common/stylesheets/base/color.scss';
+@import '../../common/stylesheets/base/font.scss';
+@import '../../common/stylesheets/base/mixin.scss';
+@import '../../common/stylesheets/base/variable.scss';
+@import '../../common/stylesheets/base/keyframes.scss';
+html {
+	font-size: $desktop;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+	text-rendering: optimizeLegibility;
+}
+.container {
+	width: 100%;
+	height: calc(100vh - 16.75rem);
+	padding: 0 4% 0 4%;
+	position: relative;
+	@include box-sizing(border-box);
+	overflow: hidden;
+	img {
+		width: 100%;
+		display: block;
+	}
+}
+@media screen and (min-width: 768px) and (max-width: 1600px) {
+	html {
+		font-size: 14px;
+	}
+}
