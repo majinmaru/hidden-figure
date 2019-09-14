@@ -1,3 +1,4 @@
+@import url("https://fonts.googleapis.com/css?family=Teko:500&display=swap");
 @font-face { font-family: 'Gotham Book'; font-style: normal; font-weight: normal; src: url("../../font/GothamBook.woff") format("woff"); }
 @font-face { font-family: 'Gotham Light'; font-style: normal; font-weight: normal; src: url("../../font/GothamLight.woff") format("woff"); }
 @font-face { font-family: 'Gotham Medium'; font-style: normal; font-weight: normal; src: url("../../font/GothamMedium.woff") format("woff"); }
@@ -8,6 +9,6 @@
 @font-face { font-family: 'Gotham Thin Regular'; font-style: normal; font-weight: normal; src: url("../../font/Gotham-Thin.woff") format("woff"); }
 @font-face { font-family: 'Gotham XLight Regular'; font-style: normal; font-weight: normal; src: url("../../font/Gotham-XLight.woff") format("woff"); }
 .footer { width: 100%; height: 5.25rem; position: relative; display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-align: center; -ms-flex-align: center; align-items: center; }
-.footer p { width: 100%; text-align: center; font-size: 1rem; font-family: 'Gotham Light'; color: #848484; }
+.footer p { width: 100%; text-align: center; font-size: 0.6rem; font-family: 'Gotham Light'; color: #848484; }
 
 /*# sourceMappingURL=footer.css.map */

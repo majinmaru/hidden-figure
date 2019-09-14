@@ -4,8 +4,201 @@
 @import '../../common/stylesheets/base/variable.scss';
 @import '../../common/stylesheets/base/keyframes.scss';
 html {
-	//font-size: $desktop;
+	font-size: $desktop;
 	-webkit-font-smoothing: antialiased;
 	-moz-osx-font-smoothing: grayscale;
 	text-rendering: optimizeLegibility;
+	background-color: $bg;
+}
+.container {
+	width: 100%;
+	position: relative;
+	.worktab-section {
+		//margin-top: 2rem;
+		width: 100%;
+		height: 3rem;
+		position: relative;
+		background-image: url('../../images/worktab-bg.png');
+		background-repeat: repeat-x;
+		background-size: 1px 3rem;
+		.worktab {
+			width: 50%;
+			height: 100%;
+			margin-left: 25%;
+			position: relative;
+			padding: 0 5%;
+			@include box-sizing(border-box);
+			@include flexbox();
+			.worktab-btn {
+				width: 31%;
+				height: 100%;
+				margin-left: 3%;
+				@include flexbox();
+				@include align-items(center);
+				@include justify-content(center);
+				background-color: $bg;
+				border: 1px solid $gray5;
+				cursor: pointer;
+				&.current {
+					border: 1px solid $point;
+					.worktab-btn__text {
+						color: $point;
+						font-family: 'Gotham Book';
+					}
+				}
+				&:nth-of-type(1) {
+					margin-left: 0;
+				}
+				&:hover {
+					border: 1px solid $point;
+					.worktab-btn__text {
+						color: $point;
+						font-family: 'Gotham Book';
+					}
+				}
+				.worktab-btn__text {
+					font-family: 'Gotham Light';
+					color: $gray5;
+					font-size: 0.875rem;
+					letter-spacing: 2px;
+				}
+			}
+		}
+	}
+	.worklist-section {
+		width: 100%;
+		height: calc(100vh - 19.75rem);
+		position: relative;
+		padding-top: 3%;
+		@include box-sizing(border-box);
+		.worklist {
+			width: 100%;
+			height: 100%;
+			position: relative;
+			overflow: hidden;
+			display: none;
+			&.current {
+				display: block;
+			}
+			.worklist-card-wrapper {
+				width: 100vw;
+				height: 100%;
+				.worklist-card {
+					width: 46vw;
+					height: 100%;
+					display: inline-block;
+					position: relative;
+					.card-wrapper {
+						position: relative;
+						width: 100%;
+						height: 70%;
+						margin-bottom: 10%;
+						.card-img {
+							width: calc((100% / 3) * 2);
+							height: 100%;
+							margin-left: calc(100% / 6);
+							position: relative;
+							overflow: hidden;
+							@include flexbox();
+							@include align-items(center);
+							background-size: cover;
+							img {
+								position: relative;
+								width: 100%;
+								height: auto;
+								margin-left: -15%;
+								display: inline-block;
+							}
+						}
+						.card-indicator {
+							width: 1.5rem;
+							height: 1.5rem;
+							border-radius: 50%;
+							background-color: transparent;
+							border: 1px solid $point;
+							position: absolute;
+							top: 0;
+							right: 10%;
+							&.current {
+								background-color: $point;
+							}
+						}
+						.card-title {
+							width: calc(100% / 3);
+							font-family: 'Teko';
+							font-weight: 500;
+							font-size: 3rem;
+							line-height: 1;
+							color: $black;
+							position: absolute;
+							top: 50%;
+							left: calc((100% / 3) * 2);
+							letter-spacing: 5px;
+							@include transform(translateY(-50%));
+						}
+						.card-number {
+							width: calc(100% / 6);
+							text-align: right;
+							position: absolute;
+							top: 80%;
+							right: 0;
+							font-family: 'Gotham Light';
+							color: $gray4;
+							font-size: 1rem;
+							letter-spacing: 1px;
+						}
+					}
+					.card-detail {
+						position: relative;
+						width: 100%;
+						height: 2rem;
+						p {
+							position: relative;
+							font-family: 'Gotham Light';
+							color: $gray4;
+							font-size: 0.8rem;
+							text-align: center;
+						}
+						span {
+							width: 8%;
+							height: 1px;
+							background-color: $gray4;
+							display: block;
+							margin-left: 46%;
+							margin-top: 0.5rem;
+						}
+					}
+				}
+			}
+			.worklist-arrow {
+				width: 24%;
+				position: absolute;
+				bottom: 5%;
+				left: 38%;
+				@include flexbox();
+				z-index: 9000;
+				.worklist-arrow__btn {
+					display: inline-block;
+					width: 2.125rem;
+					height: 1.5rem;
+					cursor: pointer;
+					img {
+						width: 100%;
+					}
+					&.prev {}
+					&.next {
+						margin-left: calc(100% - 4.25rem);
+						img {
+							@include transform(rotateY(180deg));
+						}
+					}
+				}
+			}
+		}
+	}
+}
+@media screen and (min-width: 768px) and (max-width: 1600px) {
+	html {
+		font-size: 14px;
+	}
 }
