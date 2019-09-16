@@ -1,74 +1,94 @@
 @font-face {
-font-family: 'Gotham Book';
-font-style: normal;
-font-weight: normal;
-src: url('../../font/GothamBook.woff') format('woff');
+    font-family: 'Gotham';
+    src: url('https://majinmaru.github.io/hidden-figure/common/font/Gotham-Light.eot');
+    src: url('https://majinmaru.github.io/hidden-figure/common/font/Gotham-Light.eot?#iefix') format('embedded-opentype'),
+        url('https://majinmaru.github.io/hidden-figure/common/font/Gotham-Light.woff2') format('woff2'),
+        url('https://majinmaru.github.io/hidden-figure/common/font/Gotham-Light.woff') format('woff'),
+        url('https://majinmaru.github.io/hidden-figure/common/font/Gotham-Light.ttf') format('truetype'),
+        url('https://majinmaru.github.io/hidden-figure/common/font/Gotham-Light.svg#Gotham-Light') format('svg');
+    font-weight: 300;
+    font-style: normal;
 }
 
-
 @font-face {
-font-family: 'Gotham Light';
-font-style: normal;
-font-weight: normal;
-src: url('../../font/GothamLight.woff') format('woff');
+    font-family: 'Gotham';
+    src: url('https://majinmaru.github.io/hidden-figure/common/font/Gotham-Bold.eot');
+    src: url('https://majinmaru.github.io/hidden-figure/common/font/Gotham-Bold.eot?#iefix') format('embedded-opentype'),
+        url('https://majinmaru.github.io/hidden-figure/common/font/Gotham-Bold.woff2') format('woff2'),
+        url('https://majinmaru.github.io/hidden-figure/common/font/Gotham-Bold.woff') format('woff'),
+        url('https://majinmaru.github.io/hidden-figure/common/font/Gotham-Bold.ttf') format('truetype'),
+        url('https://majinmaru.github.io/hidden-figure/common/font/Gotham-Bold.svg#Gotham-Bold') format('svg');
+    font-weight: bold;
+    font-style: normal;
 }
 
-
 @font-face {
-font-family: 'Gotham Medium';
-font-style: normal;
-font-weight: normal;
-src: url('../../font/GothamMedium.woff') format('woff');
+    font-family: 'Gotham';
+    src: url('https://majinmaru.github.io/hidden-figure/common/font/Gotham-Black.eot');
+    src: url('https://majinmaru.github.io/hidden-figure/common/font/Gotham-Black.eot?#iefix') format('embedded-opentype'),
+        url('https://majinmaru.github.io/hidden-figure/common/font/Gotham-Black.woff2') format('woff2'),
+        url('https://majinmaru.github.io/hidden-figure/common/font/Gotham-Black.woff') format('woff'),
+        url('https://majinmaru.github.io/hidden-figure/common/font/Gotham-Black.ttf') format('truetype'),
+        url('https://majinmaru.github.io/hidden-figure/common/font/Gotham-Black.svg#Gotham-Black') format('svg');
+    font-weight: 500;
+    font-style: normal;
 }
 
-
 @font-face {
-font-family: 'Gotham Medium';
-font-style: normal;
-font-weight: normal;
-src: url('../../font/GothamMedium_1.woff') format('woff');
+    font-family: 'Gotham';
+    src: url('https://majinmaru.github.io/hidden-figure/common/font/Gotham-Thin.eot');
+    src: url('https://majinmaru.github.io/hidden-figure/common/font/Gotham-Thin.eot?#iefix') format('embedded-opentype'),
+        url('https://majinmaru.github.io/hidden-figure/common/font/Gotham-Thin.woff2') format('woff2'),
+        url('https://majinmaru.github.io/hidden-figure/common/font/Gotham-Thin.woff') format('woff'),
+        url('https://majinmaru.github.io/hidden-figure/common/font/Gotham-Thin.ttf') format('truetype'),
+        url('https://majinmaru.github.io/hidden-figure/common/font/Gotham-Thin.svg#Gotham-Thin') format('svg');
+    font-weight: 100;
+    font-style: normal;
 }
 
-
 @font-face {
-font-family: 'Gotham Bold';
-font-style: normal;
-font-weight: normal;
-src: url('../../font/GothamBold.woff') format('woff');
-}
-
-
-@font-face {
-font-family: 'Gotham Bold';
-font-style: normal;
-font-weight: normal;
-src: url('../../font/Gotham-Bold.woff') format('woff');
-}
-
-
-@font-face {
-font-family: 'Gotham Light Regular';
-font-style: normal;
-font-weight: normal;
-src: url('../../font/Gotham-Light.woff') format('woff');
-}
-
-
-@font-face {
-font-family: 'Gotham Thin Regular';
-font-style: normal;
-font-weight: normal;
-src: url('../../font/Gotham-Thin.woff') format('woff');
-}
-
-
-@font-face {
-font-family: 'Gotham XLight Regular';
-font-style: normal;
-font-weight: normal;
-src: url('../../font/Gotham-XLight.woff') format('woff');
+    font-family: 'Gotham';
+    src: url('https://majinmaru.github.io/hidden-figure/common/font/Gotham-Book.eot');
+    src: url('https://majinmaru.github.io/hidden-figure/common/font/Gotham-Book.eot?#iefix') format('embedded-opentype'),
+        url('https://majinmaru.github.io/hidden-figure/common/font/Gotham-Book.woff2') format('woff2'),
+        url('https://majinmaru.github.io/hidden-figure/common/font/Gotham-Book.woff') format('woff'),
+        url('https://majinmaru.github.io/hidden-figure/common/font/Gotham-Book.ttf') format('truetype'),
+        url('https://majinmaru.github.io/hidden-figure/common/font/Gotham-Book.svg#Gotham-Book') format('svg');
+    font-weight: normal;
+    font-style: normal;
 }
 
 @import url('https://fonts.googleapis.com/css?family=Teko:500&display=swap');
 //font-family: 'Teko';
+
+@font-face { 
+	font-family: 'NanumBarunGothic'; 
+	font-style: normal; 
+	font-weight: 400; 
+	src: url('//cdn.jsdelivr.net/font-nanumlight/1.0/NanumBarunGothicWeb.eot'); 
+	src: url('//cdn.jsdelivr.net/font-nanumlight/1.0/NanumBarunGothicWeb.eot?#iefix') format('embedded-opentype'), 
+		url('//cdn.jsdelivr.net/font-nanumlight/1.0/NanumBarunGothicWeb.woff') format('woff'), 
+		url('//cdn.jsdelivr.net/font-nanumlight/1.0/NanumBarunGothicWeb.ttf') format('truetype'); 
+} 
+@font-face { 
+	font-family: 'NanumBarunGothic'; 
+	font-style: normal; 
+	font-weight: 700; 
+	src: url('//cdn.jsdelivr.net/font-nanumlight/1.0/NanumBarunGothicWebBold.eot'); 
+	src: url('//cdn.jsdelivr.net/font-nanumlight/1.0/NanumBarunGothicWebBold.eot?#iefix') format('embedded-opentype'), 
+		url('//cdn.jsdelivr.net/font-nanumlight/1.0/NanumBarunGothicWebBold.woff') format('woff'), 
+		url('//cdn.jsdelivr.net/font-nanumlight/1.0/NanumBarunGothicWebBold.ttf') format('truetype') 
+} 
+@font-face { 
+	font-family: 'NanumBarunGothic'; 
+	font-style: normal; 
+	font-weight: 300; 
+	src: url('//cdn.jsdelivr.net/font-nanumlight/1.0/NanumBarunGothicWebLight.eot'); 
+	src: url('//cdn.jsdelivr.net/font-nanumlight/1.0/NanumBarunGothicWebLight.eot?#iefix') format('embedded-opentype'), 
+		url('//cdn.jsdelivr.net/font-nanumlight/1.0/NanumBarunGothicWebLight.woff') format('woff'), 
+		url('//cdn.jsdelivr.net/font-nanumlight/1.0/NanumBarunGothicWebLight.ttf') format('truetype'); 
+} 
+//font-family: 'NanumBarunGothic';
+
+
 $desktop: 14pt;
