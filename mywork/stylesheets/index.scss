@@ -10,6 +10,9 @@ html {
 	text-rendering: optimizeLegibility;
 	background-color: $bg;
 }
+.slick-slide:focus { 
+	outline: none; 
+}
 .container {
 	width: 100%;
 	position: relative;
@@ -77,22 +80,33 @@ html {
 			position: relative;
 			overflow: hidden;
 			display: none;
+			z-index: 9000;
 			&.current {
 				display: block;
 			}
 			.worklist-card-wrapper {
 				width: 100vw;
-				height: 100%;
+				height: calc(100% - 7rem);
+				margin-top: 2rem;
 				.worklist-card {
 					width: 46vw;
 					height: 100%;
 					display: inline-block;
 					position: relative;
+					&.slick-center {
+						.card-wrapper {
+							.card-indicator {
+								background-color: $point;
+							}
+						}
+						.card-detail {
+							display: block;
+						}
+					}
 					.card-wrapper {
 						position: relative;
 						width: 100%;
-						height: 70%;
-						margin-bottom: 10%;
+						height: 100%;
 						.card-img {
 							width: calc((100% / 3) * 2);
 							height: 100%;
@@ -119,9 +133,6 @@ html {
 							position: absolute;
 							top: 0;
 							right: 10%;
-							&.current {
-								background-color: $point;
-							}
 						}
 						.card-title {
 							width: calc(100% / 3);
@@ -152,53 +163,56 @@ html {
 						position: relative;
 						width: 100%;
 						height: 2rem;
-						p {
+						overflow: hidden;
+						display: none;
+						text-align: center;
+						margin-top: 4rem;
+						.card-detail__text {
 							position: relative;
 							font-family: 'Gotham Light';
 							color: $gray4;
 							font-size: 0.8rem;
-							text-align: center;
+							cursor: pointer;
+							text-decoration: none;
 						}
-						span {
-							width: 8%;
+						.card-detail__line {
+							width: 0;
 							height: 1px;
 							background-color: $gray4;
 							display: block;
-							margin-left: 46%;
+							margin-left: calc((100% - 3rem) / 2);
 							margin-top: 0.5rem;
+							position: relative;
+							@include transition(all 0.3s ease);
+							&.hover {
+								width: 3rem;
+							}
 						}
 					}
 				}
 			}
-			.worklist-arrow {
-				width: 24%;
-				position: absolute;
-				bottom: 5%;
-				left: 38%;
-				@include flexbox();
-				z-index: 9000;
-				.worklist-arrow__btn {
-					display: inline-block;
-					width: 2.125rem;
-					height: 1.5rem;
-					cursor: pointer;
+			.worklist-arrow__btn {
+				display: inline-block;
+				width: 2.125rem;
+				height: 1.5rem;
+				cursor: pointer;
+				img {
+					width: 100%;
+				}
+				&.prev {
+					position: absolute;
+					bottom: 3rem;
+					left: 38%;
+				}
+				&.next {
+					position: absolute;
+					bottom: 3rem;
+					right: 38%;
 					img {
-						width: 100%;
-					}
-					&.prev {}
-					&.next {
-						margin-left: calc(100% - 4.25rem);
-						img {
-							@include transform(rotateY(180deg));
-						}
+						@include transform(rotateY(180deg));
 					}
 				}
-			}
+			}			
 		}
-	}
-}
-@media screen and (min-width: 768px) and (max-width: 1600px) {
-	html {
-		font-size: 14px;
 	}
 }

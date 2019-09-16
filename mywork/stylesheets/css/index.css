@@ -8,7 +8,9 @@
 @font-face { font-family: 'Gotham Light Regular'; font-style: normal; font-weight: normal; src: url("../../font/Gotham-Light.woff") format("woff"); }
 @font-face { font-family: 'Gotham Thin Regular'; font-style: normal; font-weight: normal; src: url("../../font/Gotham-Thin.woff") format("woff"); }
 @font-face { font-family: 'Gotham XLight Regular'; font-style: normal; font-weight: normal; src: url("../../font/Gotham-XLight.woff") format("woff"); }
-html { font-size: 16pt; -webkit-font-smoothing: antialiased; -moz-osx-font-smoothing: grayscale; text-rendering: optimizeLegibility; background-color: #f3f3f3; }
+html { font-size: 14pt; -webkit-font-smoothing: antialiased; -moz-osx-font-smoothing: grayscale; text-rendering: optimizeLegibility; background-color: #f3f3f3; }
+
+.slick-slide:focus { outline: none; }
 
 .container { width: 100%; position: relative; }
 .container .worktab-section { width: 100%; height: 3rem; position: relative; background-image: url("../../images/worktab-bg.png"); background-repeat: repeat-x; background-size: 1px 3rem; }
@@ -21,26 +23,26 @@ html { font-size: 16pt; -webkit-font-smoothing: antialiased; -moz-osx-font-smoot
 .container .worktab-section .worktab .worktab-btn:hover .worktab-btn__text { color: #67dca3; font-family: 'Gotham Book'; }
 .container .worktab-section .worktab .worktab-btn .worktab-btn__text { font-family: 'Gotham Light'; color: #a8a8a8; font-size: 0.875rem; letter-spacing: 2px; }
 .container .worklist-section { width: 100%; height: calc(100vh - 19.75rem); position: relative; padding-top: 3%; -webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box; }
-.container .worklist-section .worklist { width: 100%; height: 100%; position: relative; overflow: hidden; display: none; }
+.container .worklist-section .worklist { width: 100%; height: 100%; position: relative; overflow: hidden; display: none; z-index: 9000; }
 .container .worklist-section .worklist.current { display: block; }
-.container .worklist-section .worklist .worklist-card-wrapper { width: 100vw; height: 100%; }
+.container .worklist-section .worklist .worklist-card-wrapper { width: 100vw; height: calc(100% - 7rem); margin-top: 2rem; }
 .container .worklist-section .worklist .worklist-card-wrapper .worklist-card { width: 46vw; height: 100%; display: inline-block; position: relative; }
-.container .worklist-section .worklist .worklist-card-wrapper .worklist-card .card-wrapper { position: relative; width: 100%; height: 70%; margin-bottom: 10%; }
+.container .worklist-section .worklist .worklist-card-wrapper .worklist-card.slick-center .card-wrapper .card-indicator { background-color: #67dca3; }
+.container .worklist-section .worklist .worklist-card-wrapper .worklist-card.slick-center .card-detail { display: block; }
+.container .worklist-section .worklist .worklist-card-wrapper .worklist-card .card-wrapper { position: relative; width: 100%; height: 100%; }
 .container .worklist-section .worklist .worklist-card-wrapper .worklist-card .card-wrapper .card-img { width: calc((100% / 3) * 2); height: 100%; margin-left: calc(100% / 6); position: relative; overflow: hidden; display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-align: center; -ms-flex-align: center; align-items: center; background-size: cover; }
 .container .worklist-section .worklist .worklist-card-wrapper .worklist-card .card-wrapper .card-img img { position: relative; width: 100%; height: auto; margin-left: -15%; display: inline-block; }
 .container .worklist-section .worklist .worklist-card-wrapper .worklist-card .card-wrapper .card-indicator { width: 1.5rem; height: 1.5rem; border-radius: 50%; background-color: transparent; border: 1px solid #67dca3; position: absolute; top: 0; right: 10%; }
-.container .worklist-section .worklist .worklist-card-wrapper .worklist-card .card-wrapper .card-indicator.current { background-color: #67dca3; }
 .container .worklist-section .worklist .worklist-card-wrapper .worklist-card .card-wrapper .card-title { width: calc(100% / 3); font-family: 'Teko'; font-weight: 500; font-size: 3rem; line-height: 1; color: #262626; position: absolute; top: 50%; left: calc((100% / 3) * 2); letter-spacing: 5px; -webkit-transform: translateY(-50%); -ms-transform: translateY(-50%); transform: translateY(-50%); }
 .container .worklist-section .worklist .worklist-card-wrapper .worklist-card .card-wrapper .card-number { width: calc(100% / 6); text-align: right; position: absolute; top: 80%; right: 0; font-family: 'Gotham Light'; color: #8c8c8c; font-size: 1rem; letter-spacing: 1px; }
-.container .worklist-section .worklist .worklist-card-wrapper .worklist-card .card-detail { position: relative; width: 100%; height: 2rem; }
-.container .worklist-section .worklist .worklist-card-wrapper .worklist-card .card-detail p { position: relative; font-family: 'Gotham Light'; color: #8c8c8c; font-size: 0.8rem; text-align: center; }
-.container .worklist-section .worklist .worklist-card-wrapper .worklist-card .card-detail span { width: 8%; height: 1px; background-color: #8c8c8c; display: block; margin-left: 46%; margin-top: 0.5rem; }
-.container .worklist-section .worklist .worklist-arrow { width: 24%; position: absolute; bottom: 5%; left: 38%; display: -webkit-box; display: -ms-flexbox; display: flex; z-index: 9000; }
-.container .worklist-section .worklist .worklist-arrow .worklist-arrow__btn { display: inline-block; width: 2.125rem; height: 1.5rem; cursor: pointer; }
-.container .worklist-section .worklist .worklist-arrow .worklist-arrow__btn img { width: 100%; }
-.container .worklist-section .worklist .worklist-arrow .worklist-arrow__btn.next { margin-left: calc(100% - 4.25rem); }
-.container .worklist-section .worklist .worklist-arrow .worklist-arrow__btn.next img { -webkit-transform: rotateY(180deg); -ms-transform: rotateY(180deg); transform: rotateY(180deg); }
-
-@media screen and (min-width: 768px) and (max-width: 1600px) { html { font-size: 14px; } }
+.container .worklist-section .worklist .worklist-card-wrapper .worklist-card .card-detail { position: relative; width: 100%; height: 2rem; overflow: hidden; display: none; text-align: center; margin-top: 4rem; }
+.container .worklist-section .worklist .worklist-card-wrapper .worklist-card .card-detail .card-detail__text { position: relative; font-family: 'Gotham Light'; color: #8c8c8c; font-size: 0.8rem; cursor: pointer; text-decoration: none; }
+.container .worklist-section .worklist .worklist-card-wrapper .worklist-card .card-detail .card-detail__line { width: 0; height: 1px; background-color: #8c8c8c; display: block; margin-left: calc((100% - 3rem) / 2); margin-top: 0.5rem; position: relative; -webkit-transition: all 0.3s ease; -o-transition: all 0.3s ease; transition: all 0.3s ease; }
+.container .worklist-section .worklist .worklist-card-wrapper .worklist-card .card-detail .card-detail__line.hover { width: 3rem; }
+.container .worklist-section .worklist .worklist-arrow__btn { display: inline-block; width: 2.125rem; height: 1.5rem; cursor: pointer; }
+.container .worklist-section .worklist .worklist-arrow__btn img { width: 100%; }
+.container .worklist-section .worklist .worklist-arrow__btn.prev { position: absolute; bottom: 3rem; left: 38%; }
+.container .worklist-section .worklist .worklist-arrow__btn.next { position: absolute; bottom: 3rem; right: 38%; }
+.container .worklist-section .worklist .worklist-arrow__btn.next img { -webkit-transform: rotateY(180deg); -ms-transform: rotateY(180deg); transform: rotateY(180deg); }
 
 /*# sourceMappingURL=index.css.map */
