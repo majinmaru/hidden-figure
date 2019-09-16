@@ -8,7 +8,7 @@
 @font-face { font-family: 'Gotham Light Regular'; font-style: normal; font-weight: normal; src: url("../../font/Gotham-Light.woff") format("woff"); }
 @font-face { font-family: 'Gotham Thin Regular'; font-style: normal; font-weight: normal; src: url("../../font/Gotham-Thin.woff") format("woff"); }
 @font-face { font-family: 'Gotham XLight Regular'; font-style: normal; font-weight: normal; src: url("../../font/Gotham-XLight.woff") format("woff"); }
-html { font-size: 14pt; -webkit-font-smoothing: antialiased; -moz-osx-font-smoothing: grayscale; text-rendering: optimizeLegibility; background-color: #f3f3f3; }
+html { font-size: 14pt; -webkit-font-smoothing: antialiased; -moz-osx-font-smoothing: grayscale; text-rendering: optimizeLegibility; background-color: #f3f3f3; width: 100vw; height: 100vh; overflow: hidden; }
 
 .slick-slide:focus { outline: none; }
 

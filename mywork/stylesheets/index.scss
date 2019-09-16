@@ -9,6 +9,9 @@ html {
 	-moz-osx-font-smoothing: grayscale;
 	text-rendering: optimizeLegibility;
 	background-color: $bg;
+	width: 100vw;
+	height: 100vh;
+	overflow: hidden;
 }
 .slick-slide:focus { 
 	outline: none; 
