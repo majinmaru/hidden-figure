@@ -1,5 +1,3 @@
 $(document).ready(function(){
-	$("html").niceScroll({
-		zindex: "3"
-	});
+	$("body").niceScroll();
 });
