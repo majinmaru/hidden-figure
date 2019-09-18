@@ -96,7 +96,7 @@ html { font-size: 14pt; -webkit-font-smoothing: antialiased; -moz-osx-font-smoot
 .container .contents .banner .banner-text .banner-text__category img { position: relative; width: 100%; }
 .container .contents .banner .banner-text .banner-text__title { position: relative; font-size: 4rem; font-family: 'Teko'; font-weight: 500; color: white; line-height: 0.9; letter-spacing: 7px; margin-top: 3rem; }
 .container .contents .banner .banner-text .banner-text__goto { position: relative; width: 60%; height: 2rem; margin-top: 2rem; text-decoration: none; display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-align: center; -ms-flex-align: center; align-items: center; }
-.container .contents .banner .banner-text .banner-text__goto .goto-text { position: relative; font-family: 'Nanum Barun Gothic', sans-serif; font-size: 1.2rem; color: white; }
+.container .contents .banner .banner-text .banner-text__goto .goto-text { position: relative; font-family: 'Nanum Barun Gothic', sans-serif; font-size: 1.2rem; color: white; margin-right: 2rem; }
 .container .contents .banner .banner-text .banner-text__goto .goto-arrow { position: relative; width: 2.4rem; height: 1.7rem; float: right; }
 .container .contents .banner .banner-text .banner-text__goto .goto-arrow img { position: relative; width: 100%; display: block; }
 
