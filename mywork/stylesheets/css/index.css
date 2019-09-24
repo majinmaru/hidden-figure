@@ -41,4 +41,6 @@ html { font-size: 14pt; -webkit-font-smoothing: antialiased; -moz-osx-font-smoot
 .container .worklist-section .worklist .worklist-arrow__btn.next { position: absolute; bottom: 7%; right: 38%; }
 .container .worklist-section .worklist .worklist-arrow__btn.next img { -webkit-transform: rotateY(180deg); -ms-transform: rotateY(180deg); transform: rotateY(180deg); }
 
+@media screen and (min-width: 768px) and (max-width: 1600px) { html { font-size: 13px; } }
+
 /*# sourceMappingURL=index.css.map */

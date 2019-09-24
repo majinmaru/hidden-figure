@@ -143,7 +143,7 @@ html {
 					&:hover {
 						border: none;
 					}
-					span {
+					p {
 						color: white;
 					}
 				}
@@ -160,7 +160,7 @@ html {
 				a {
 					background-color: #04080b;
 					border: 1px solid #04080b;
-					span {
+					p {
 						color: white;
 						font-weight: 400;
 					}
@@ -178,13 +178,14 @@ html {
 				&:hover {
 					background-color: #04080b;
 					border: 1px solid #04080b;
-					span {
+					p {
 						color: white;
 						font-weight: 400;
 					}
 				}
-				span {
+				p {
 					width: 100%;
+					height: 1rem;
 					text-decoration: none;
 					color: $gray1;
 					font-family: 'Nanum Barun Gothic', sans-serif;
@@ -575,7 +576,6 @@ html {
 					@include flexbox();
 					.filter {
 						position: relative;
-						display: inline;
 						@include box-sizing(border-box);
 						width: 15vw;
 						height: 13.5vw;

@@ -143,7 +143,7 @@ html {
 					&:hover {
 						border: none;
 					}
-					span {
+					p {
 						color: white;
 					}
 				}
@@ -160,7 +160,7 @@ html {
 				a {
 					background-color: #ffb609;
 					border: 1px solid #ffb609;
-					span {
+					p {
 						color: white;
 						font-weight: 400;
 					}
@@ -178,12 +178,12 @@ html {
 				&:hover {
 					background-color: #ffb609;
 					border: 1px solid #ffb609;
-					span {
+					p {
 						color: white;
 						font-weight: 400;
 					}
 				}
-				span {
+				p {
 					width: 100%;
 					text-decoration: none;
 					color: $gray1;
