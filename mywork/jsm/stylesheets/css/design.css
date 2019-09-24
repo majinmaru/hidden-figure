@@ -1,0 +1,144 @@
+@import url("https://fonts.googleapis.com/css?family=Teko:500&display=swap");
+@font-face { font-family: 'Gotham'; src: url("https://majinmaru.github.io/hidden-figure/common/font/Gotham-Light.eot"); src: url("https://majinmaru.github.io/hidden-figure/common/font/Gotham-Light.eot?#iefix") format("embedded-opentype"), url("https://majinmaru.github.io/hidden-figure/common/font/Gotham-Light.woff2") format("woff2"), url("https://majinmaru.github.io/hidden-figure/common/font/Gotham-Light.woff") format("woff"), url("https://majinmaru.github.io/hidden-figure/common/font/Gotham-Light.ttf") format("truetype"), url("https://majinmaru.github.io/hidden-figure/common/font/Gotham-Light.svg#Gotham-Light") format("svg"); font-weight: 300; font-style: normal; }
+@font-face { font-family: 'Gotham'; src: url("https://majinmaru.github.io/hidden-figure/common/font/Gotham-Bold.eot"); src: url("https://majinmaru.github.io/hidden-figure/common/font/Gotham-Bold.eot?#iefix") format("embedded-opentype"), url("https://majinmaru.github.io/hidden-figure/common/font/Gotham-Bold.woff2") format("woff2"), url("https://majinmaru.github.io/hidden-figure/common/font/Gotham-Bold.woff") format("woff"), url("https://majinmaru.github.io/hidden-figure/common/font/Gotham-Bold.ttf") format("truetype"), url("https://majinmaru.github.io/hidden-figure/common/font/Gotham-Bold.svg#Gotham-Bold") format("svg"); font-weight: bold; font-style: normal; }
+@font-face { font-family: 'Gotham'; src: url("https://majinmaru.github.io/hidden-figure/common/font/Gotham-Black.eot"); src: url("https://majinmaru.github.io/hidden-figure/common/font/Gotham-Black.eot?#iefix") format("embedded-opentype"), url("https://majinmaru.github.io/hidden-figure/common/font/Gotham-Black.woff2") format("woff2"), url("https://majinmaru.github.io/hidden-figure/common/font/Gotham-Black.woff") format("woff"), url("https://majinmaru.github.io/hidden-figure/common/font/Gotham-Black.ttf") format("truetype"), url("https://majinmaru.github.io/hidden-figure/common/font/Gotham-Black.svg#Gotham-Black") format("svg"); font-weight: 500; font-style: normal; }
+@font-face { font-family: 'Gotham'; src: url("https://majinmaru.github.io/hidden-figure/common/font/Gotham-Thin.eot"); src: url("https://majinmaru.github.io/hidden-figure/common/font/Gotham-Thin.eot?#iefix") format("embedded-opentype"), url("https://majinmaru.github.io/hidden-figure/common/font/Gotham-Thin.woff2") format("woff2"), url("https://majinmaru.github.io/hidden-figure/common/font/Gotham-Thin.woff") format("woff"), url("https://majinmaru.github.io/hidden-figure/common/font/Gotham-Thin.ttf") format("truetype"), url("https://majinmaru.github.io/hidden-figure/common/font/Gotham-Thin.svg#Gotham-Thin") format("svg"); font-weight: 100; font-style: normal; }
+@font-face { font-family: 'Gotham'; src: url("https://majinmaru.github.io/hidden-figure/common/font/Gotham-Book.eot"); src: url("https://majinmaru.github.io/hidden-figure/common/font/Gotham-Book.eot?#iefix") format("embedded-opentype"), url("https://majinmaru.github.io/hidden-figure/common/font/Gotham-Book.woff2") format("woff2"), url("https://majinmaru.github.io/hidden-figure/common/font/Gotham-Book.woff") format("woff"), url("https://majinmaru.github.io/hidden-figure/common/font/Gotham-Book.ttf") format("truetype"), url("https://majinmaru.github.io/hidden-figure/common/font/Gotham-Book.svg#Gotham-Book") format("svg"); font-weight: normal; font-style: normal; }
+html { font-size: 14pt; -webkit-font-smoothing: antialiased; -moz-osx-font-smoothing: grayscale; text-rendering: optimizeLegibility; background-color: #f3f3f3; }
+
+.container { width: 100%; position: relative; overflow: hidden; }
+.container .brief { position: relative; width: 92%; height: 25vw; margin-left: 4%; background-repeat: no-repeat; background-size: cover; overflow: hidden; }
+.container .brief .brief-img { position: relative; width: 33%; height: 100%; margin-left: 62%; overflow: hidden; }
+.container .brief .brief-img img { position: relative; width: 100%; height: auto; display: block; }
+.container .brief .brief-info { position: absolute; top: 0; left: calc(100% / 12); width: calc((100% / 12) * 7); height: 100%; -webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box; padding: 1% 0 1% 0; display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-direction: column; -ms-flex-direction: column; flex-direction: column; -webkit-box-pack: center; -ms-flex-pack: center; justify-content: center; }
+.container .brief .brief-info .brief-info__category { position: relative; width: 9.5rem; height: 1.5rem; margin-top: 1.5rem; }
+.container .brief .brief-info .brief-info__category img { position: relative; display: block; width: 100%; height: auto; }
+.container .brief .brief-info .brief-info__title { position: relative; font-size: 4rem; font-family: 'Teko'; font-weight: 500; color: white; line-height: 0.9; letter-spacing: 7px; margin-top: 2rem; }
+.container .brief .brief-info .brief-info__content { position: relative; width: 100%; height: 7rem; background-color: rgba(255, 255, 255, 0.7); -webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box; padding: 0 2rem 0 2rem; display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-align: center; -ms-flex-align: center; align-items: center; margin-top: 2rem; }
+.container .brief .brief-info .brief-info__content .info-content__text { width: 14%; margin-left: 2%; display: inline-block; }
+.container .brief .brief-info .brief-info__content .info-content__text.period { width: 32%; }
+.container .brief .brief-info .brief-info__content .info-content__text.skill { width: 50%; }
+.container .brief .brief-info .brief-info__content .info-content__text .info-content__text-title { position: relative; width: 100%; font-size: 1rem; font-family: 'Nanum Barun Gothic', sans-serif; font-weight: 300; color: #575757; }
+.container .brief .brief-info .brief-info__content .info-content__text .info-content__text-body { position: relative; width: 100%; font-size: 1.2rem; font-family: 'Nanum Barun Gothic', sans-serif; color: #575757; font-weight: 700; margin-top: 0.5rem; }
+.container .btn-wrapper { position: absolute; top: 60vh; left: 0; right: 0; width: 100%; height: 4rem; display: -webkit-box; display: -ms-flexbox; display: flex; }
+.container .btn-wrapper.sticky { position: fixed; top: -4rem; left: 0; background-color: #575757; z-index: 9990; -webkit-transform: translateY(4rem); -ms-transform: translateY(4rem); transform: translateY(4rem); -webkit-transition: transform 0.3s ease, background-color 0.3s ease; -o-transition: transform 0.3s ease, background-color 0.3s ease; transition: transform 0.3s ease, background-color 0.3s ease; }
+.container .btn-wrapper.sticky .btn-tab { z-index: 9991; margin-left: 0; }
+.container .btn-wrapper.sticky .btn-tab:nth-of-type(1) { margin-left: 27.5%; }
+.container .btn-wrapper.sticky .btn-tab.current a { border: none; }
+.container .btn-wrapper.sticky .btn-tab a { border: none; }
+.container .btn-wrapper.sticky .btn-tab a:hover { border: none; }
+.container .btn-wrapper.sticky .btn-tab a span { color: white; }
+.container .btn-wrapper .btn-tab { width: 15%; height: 100%; margin-left: 2%; }
+.container .btn-wrapper .btn-tab:nth-of-type(1) { margin-left: 25.5%; }
+.container .btn-wrapper .btn-tab.current a { background-color: #04080b; border: 1px solid #04080b; }
+.container .btn-wrapper .btn-tab.current a span { color: white; font-weight: 400; }
+.container .btn-wrapper .btn-tab a { width: 100%; height: 100%; background-color: transparent; border: 1px solid #04080b; text-decoration: none; text-align: center; display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-align: center; -ms-flex-align: center; align-items: center; }
+.container .btn-wrapper .btn-tab a:hover { background-color: #04080b; border: 1px solid #04080b; }
+.container .btn-wrapper .btn-tab a:hover span { color: white; font-weight: 400; }
+.container .btn-wrapper .btn-tab a span { width: 100%; text-decoration: none; color: #575757; font-family: 'Nanum Barun Gothic', sans-serif; font-weight: 300; font-size: 1rem; }
+.container .contents { position: relative; width: 100%; margin-top: 13vw; }
+.container .contents .content .content-title { position: relative; width: 25%; margin-left: 37.5%; }
+.container .contents .content .content-title.right { width: calc(100% / 6); margin-left: calc((100% / 6) * 5); }
+.container .contents .content .content-title.right .content-title__line { background-color: #575757; }
+.container .contents .content .content-title.right .content-title__subtitle { color: #575757; }
+.container .contents .content .content-title.right .content-title__title { color: #575757; }
+.container .contents .content .content-title.left { width: 30.5%; margin-left: 12%; }
+.container .contents .content .content-title.left .content-title__line { background-color: #575757; }
+.container .contents .content .content-title.left .content-title__subtitle { color: #575757; }
+.container .contents .content .content-title.left .content-title__title { color: #575757; }
+.container .contents .content .content-title.left .content-title__text { width: 70%; margin-left: 15%; font-family: 'Nanum Barun Gothic'; color: #575757; font-size: 1rem; line-height: 1.75; text-align: center; margin-top: 4rem; }
+.container .contents .content .content-title.left .content-title__text sup { vertical-align: super; font-size: 0.5rem; }
+.container .contents .content .content-title.left .content-title__text sup span { color: #fb38a9; }
+.container .contents .content .content-title .content-title__line { position: relative; width: 11rem; height: 1px; margin-left: calc((100% - 11rem) / 2); display: inline-block; background-color: #575757; }
+.container .contents .content .content-title .content-title__line.bottom { margin-top: -0.3rem; }
+.container .contents .content .content-title .content-title__subtitle { width: 100%; height: 0.7rem; text-align: center; font-family: 'Gotham'; font-weight: 300; font-style: normal; font-size: 1rem; line-height: 1; color: #575757; margin-top: 0.3rem; }
+.container .contents .content .content-title .content-title__title { width: 100%; text-align: center; font-family: 'Teko'; font-weight: 500; font-size: 2.85rem; line-height: 1; color: #575757; letter-spacing: 5px; margin-top: 0.5rem; }
+.container .contents .content-01 { position: relative; width: 100%; -webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box; padding: 0 12%; }
+.container .contents .content-01 .content-01__video { position: relative; width: 100%; height: auto; z-index: 5; }
+.container .contents .content-02 { position: relative; width: 100%; -webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box; padding: 13vw 12% 0 12%; background-color: #04080b; margin-top: -13.5vw; }
+.container .contents .content-02 img { position: relative; width: 100%; }
+.container .contents .content-03 { position: relative; width: 100%; height: 54vw; -webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box; padding-top: 7vw; }
+.container .contents .content-03 .content-03__text { position: relative; width: 100%; font-family: 'Nanum Barun Gothic'; color: #575757; font-size: 1rem; margin-top: 2rem; text-align: center; font-weight: 300; }
+.container .contents .content-03 .content-03__workthrough { position: absolute; top: 0; left: 0; right: 0; width: 100%; }
+.container .contents .content-03 .content-03__workthrough img { position: absolute; top: 0; left: 0; right: 0; width: 100%; }
+.container .contents .content-04 { position: relative; width: 100%; -webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box; padding: 5vw 4% 0 4%; background-color: #04080b; }
+.container .contents .content-04 .content-04__video { position: relative; width: 100%; }
+.container .contents .content-04 .content-04__video .video-home { position: relative; width: 100%; }
+.container .contents .content-04 .content-04__menu { position: relative; width: 100%; margin-top: 2rem; -webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box; padding-left: 25%; padding-right: calc(100% / 12); display: -webkit-box; display: -ms-flexbox; display: flex; }
+.container .contents .content-04 .content-04__menu .menu-text { position: relative; width: 50%; display: inline-block; }
+.container .contents .content-04 .content-04__menu .menu-text .menu-text__line { position: relative; width: 100%; height: 1px; background-color: white; margin-top: 4rem; }
+.container .contents .content-04 .content-04__menu .menu-text p { position: relative; margin-top: 2rem; width: 75%; font-family: 'Nanum Barun Gothic'; font-size: 1rem; line-height: 1.75; color: white; word-wrap: break-word; word-break: keep-all; }
+.container .contents .content-04 .content-04__menu .menu-img { position: relative; width: 50%; display: inline-block; }
+.container .contents .content-04 .content-04__menu .menu-img img { position: relative; width: 90%; height: auto; display: block; }
+.container .contents .content-05 { position: relative; width: 100%; -webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box; padding-top: 7vw; background-image: url("../../images/d-content-05-1-bg.png"); background-size: 100%; background-position: center top; background-repeat: no-repeat; }
+.container .contents .content-05 .content-05__video { position: relative; margin-top: 3rem; width: 100%; height: 61vw; }
+.container .contents .content-05 .content-05__video .content-05__video-mp4 { position: relative; width: 18.8%; height: 37.2vw; margin-left: 40.6%; border-radius: 3rem; overflow: hidden; -webkit-box-shadow: 0 5px 20px rgba(61, 61, 61, 0.3); -moz-box-shadow: 0 5px 20px rgba(61, 61, 61, 0.3); box-shadow: 0 5px 20px rgba(61, 61, 61, 0.3); }
+.container .contents .content-05 .content-05__video .content-05__video-mp4 .video-home { position: relative; width: 100%; }
+.container .contents .content-05 .content-05__filterpage { position: absolute; top: 61vw; left: 0; right: 0; width: 100%; display: -webkit-box; display: -ms-flexbox; display: flex; z-index: 5; }
+.container .contents .content-05 .content-05__filterpage .filterpage-img { position: relative; width: 65.2%; height: 34.5vw; overflow: hidden; }
+.container .contents .content-05 .content-05__filterpage .filterpage-img img { position: relative; width: 100%; height: auto; display: block; }
+.container .contents .content-05 .content-05__filterpage .filterpage-img .filterpage-img__text { position: absolute; width: 15rem; border-bottom: 1px solid #04080b; -webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box; padding: 1.5rem 0; }
+.container .contents .content-05 .content-05__filterpage .filterpage-img .filterpage-img__text p { font-family: 'Nanum Barun Gothic'; font-size: 1rem; line-height: 1.75; color: #04080b; }
+.container .contents .content-05 .content-05__filterpage .filterpage-text { position: relative; width: 34.8%; -webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box; padding-top: 2rem; padding-left: 5%; padding-right: 12%; font-family: 'Nanum Barun Gothic'; font-size: 1rem; line-height: 1.75; font-weight: 300; color: #575757; word-wrap: break-word; word-break: keep-all; }
+.container .contents .content-05 .content-05__filter { position: relative; width: 100%; background-color: #04080b; -webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box; padding: 3.8vw 4% 6vw 4%; }
+.container .contents .content-05 .content-05__filter img { position: relative; width: calc((100% / 6) * 5); margin-left: calc(100% / 6); height: auto; display: block; }
+.container .contents .content-06 { position: relative; width: 100%; -webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box; padding: 7vw 12% 6vw 12%; background-image: url("../../images/d-content-06-1-bg.png"); background-size: 100%; background-position: center top; background-repeat: no-repeat; }
+.container .contents .content-06 .content-06__product { position: relative; width: 100%; display: -webkit-box; display: -ms-flexbox; display: flex; margin-top: 3rem; }
+.container .contents .content-06 .content-06__product .product-text { position: relative; width: 40%; display: inline-block; -webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box; padding-left: 6%; padding-right: 5%; padding-top: 23%; }
+.container .contents .content-06 .content-06__product .product-text .product-text__img { position: relative; width: 70%; }
+.container .contents .content-06 .content-06__product .product-text .product-text__img img { position: relative; width: 100%; height: auto; display: block; }
+.container .contents .content-06 .content-06__product .product-text .product-text__text { position: relative; width: 100%; font-family: 'Nanum Barun Gothic'; font-size: 1rem; line-height: 1.75; color: #575757; margin-top: 4rem; word-wrap: break-word; word-break: keep-all; }
+.container .contents .content-06 .content-06__product .product-img { position: relative; width: 60%; display: inline-block; display: -webkit-box; display: -ms-flexbox; display: flex; }
+.container .contents .content-06 .content-06__product .product-img .product-img__mockup { position: relative; width: 39%; height: 37vw; margin-left: 11%; background-image: url("../../images/d-content-06-3.png"); background-size: contain; background-repeat: no-repeat; }
+.container .contents .content-06 .content-06__product .product-img .product-img__mockup img { position: relative; width: 90%; margin-top: 4%; margin-left: 5.5%; border-radius: 1.5rem; -webkit-box-shadow: 0 10px 20px rgba(61, 61, 61, 0.3); -moz-box-shadow: 0 10px 20px rgba(61, 61, 61, 0.3); box-shadow: 0 10px 20px rgba(61, 61, 61, 0.3); }
+.container .contents .content-06 .content-06__product .product-img .product-img__mockup .mockup-video { position: relative; width: 90%; margin-top: 4%; margin-left: 5%; border-radius: 1.5rem; -webkit-box-shadow: 0 10px 20px rgba(61, 61, 61, 0.3); -moz-box-shadow: 0 10px 20px rgba(61, 61, 61, 0.3); box-shadow: 0 10px 20px rgba(61, 61, 61, 0.3); }
+.container .contents .content-07 { position: relative; width: 100%; background-color: #04080b; }
+.container .contents .content-07 .content-07__img { position: relative; width: 100%; }
+.container .contents .content-07 .content-07__img.second { position: absolute; top: 0; left: 0; right: 0; width: 100%; }
+.container .contents .content-08 { position: relative; width: 100%; -webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box; padding-top: 8vw; background-image: url("../../images/d-content-08-1.png"); background-size: 100%; background-position: center top; background-repeat: no-repeat; }
+.container .contents .content-08 .content-08__tutorial { position: relative; width: 88%; margin-left: 12%; display: -webkit-box; display: -ms-flexbox; display: flex; margin-top: 4rem; }
+.container .contents .content-08 .content-08__tutorial .tutorial-text { position: relative; width: 39.5%; display: inline-block; -webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box; padding: 20vw 5% 0 5%; }
+.container .contents .content-08 .content-08__tutorial .tutorial-text .tutorial-text__img { position: relative; width: 65%; }
+.container .contents .content-08 .content-08__tutorial .tutorial-text .tutorial-text__img img { position: relative; width: 100%; height: auto; display: block; }
+.container .contents .content-08 .content-08__tutorial .tutorial-text .tutorial-text__text { position: relative; width: 100%; font-family: 'Nanum Barun Gothic'; font-size: 1rem; line-height: 1.75; color: #575757; margin-top: 4rem; word-wrap: break-word; word-break: keep-all; }
+.container .contents .content-08 .content-08__tutorial .tutorial-img { position: relative; width: 60.5%; display: inline-block; }
+.container .contents .content-08 .content-08__tutorial .tutorial-img img { position: relative; width: 100%; }
+.container .contents .content-08 .content-08__capture { position: absolute; width: 43%; left: 4.5%; top: 69vw; }
+.container .contents .content-08 .content-08__capture img { position: relative; width: 100%; }
+.container .contents .content-09 { position: relative; width: 100%; height: 42vw; overflow: hidden; background-color: #04080b; display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box; padding: 5vw 12% 0 12%; }
+.container .contents .content-09 .content-09__img { position: relative; width: 60%; display: inline-block; }
+.container .contents .content-09 .content-09__img img { position: relative; width: 90%; margin-left: 5%; }
+.container .contents .content-09 .content-09__text { position: relative; width: 40%; display: inline-block; }
+.container .contents .content-09 .content-09__text .content-09__text-title { position: relative; width: 100%; margin-top: 1rem; }
+.container .contents .content-09 .content-09__text .content-09__text-title .text-title__line { width: 11rem; height: 1px; margin-left: calc((100% - 11rem) / 2); margin-right: calc((100% - 11rem) / 2); display: inline-block; background-color: white; }
+.container .contents .content-09 .content-09__text .content-09__text-title .text-title__line.bottom { margin-top: -0.3rem; }
+.container .contents .content-09 .content-09__text .content-09__text-title .text-title__subtitle { position: relative; height: 0.7rem; text-align: center; font-family: 'Gotham'; font-weight: 300; font-style: normal; font-size: 1rem; line-height: 1; color: white; margin-top: 0.3rem; }
+.container .contents .content-09 .content-09__text .content-09__text-title .text-title__title { width: 100%; text-align: center; font-family: 'Teko'; font-weight: 500; font-size: 2.85rem; line-height: 1; color: white; letter-spacing: 5px; margin-top: 0.5rem; }
+.container .contents .content-09 .content-09__text .content-09__text-img { position: relative; width: 48%; margin-left: 26%; display: inline-block; margin-top: 5rem; }
+.container .contents .content-09 .content-09__text .content-09__text-img img { position: relative; width: 100%; height: auto; display: block; }
+.container .contents .content-09 .content-09__text p { width: 70%; margin-left: 15%; font-family: 'Nanum Barun Gothic'; font-size: 1rem; line-height: 1.75; color: white; word-break: keep-all; word-wrap: break-word; text-align: center; margin-top: 3rem; }
+.container .contents .content-09 .content-09__text p span { color: #ff7dc8; }
+.container .contents .content-09 .content-09__text p sup { font-size: 0.5rem; vertical-align: super; }
+.container .contents .content-10 { position: relative; width: 100%; -webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box; padding-top: 8vw; overflow: hidden; }
+.container .contents .content-10 .content-10__pages { position: relative; width: 100%; margin-top: -22.1vw; }
+.container .contents .content-10 .content-10__pages img { position: relative; width: 100%; height: auto; }
+.container .contents .content-11 { position: relative; width: 100%; -webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box; padding: 7vw 4% 5vw 4%; }
+.container .contents .content-11 .content-11__thankyou { position: relative; width: 50%; margin-left: 25%; display: block; }
+.container .contents .content-11 .content-11__thankyou .thankyou-img { position: relative; width: 100%; }
+.container .contents .content-11 .content-11__thankyou .thankyou-img.second { position: absolute; top: 0; left: 0; right: 0; }
+.container .contents .banner { position: relative; width: 100%; height: 28vw; margin-top: 4rem; overflow: hidden; display: block; }
+.container .contents .banner .banner-img { position: relative; width: 100%; height: 100%; overflow: hidden; }
+.container .contents .banner .banner-img img { position: relative; width: 100%; }
+.container .contents .banner .banner-text { position: absolute; width: 25%; height: 100%; top: 0; left: 68%; }
+.container .contents .banner .banner-text .banner-text__category { position: relative; width: 9.5rem; height: 1.5rem; margin-top: 7vw; }
+.container .contents .banner .banner-text .banner-text__category img { position: relative; width: 100%; }
+.container .contents .banner .banner-text .banner-text__title { position: relative; font-size: 4rem; font-family: 'Teko'; font-weight: 500; color: white; line-height: 0.9; letter-spacing: 7px; margin-top: 3rem; }
+.container .contents .banner .banner-text .banner-text__goto { position: relative; width: 65%; height: 2rem; margin-top: 2rem; text-decoration: none; display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-align: center; -ms-flex-align: center; align-items: center; }
+.container .contents .banner .banner-text .banner-text__goto .goto-text { position: relative; font-family: 'Nanum Barun Gothic', sans-serif; font-size: 1.2rem; color: white; margin-right: 2rem; }
+.container .contents .banner .banner-text .banner-text__goto .goto-arrow { position: relative; width: 2.4rem; height: 1.7rem; float: right; }
+.container .contents .banner .banner-text .banner-text__goto .goto-arrow img { position: relative; width: 100%; display: block; }
+
+@media screen and (min-width: 768px) and (max-width: 1600px) { html { font-size: 13px; }
+  .container .contents .content-05 .content-05__filter { padding: 5.5vw 4% 6vw 4%; } }
+
+/*# sourceMappingURL=design.css.map */

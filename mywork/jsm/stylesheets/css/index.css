@@ -1,13 +1,114 @@
 @import url("https://fonts.googleapis.com/css?family=Teko:500&display=swap");
-@font-face { font-family: 'Gotham Book'; font-style: normal; font-weight: normal; src: url("../../font/GothamBook.woff") format("woff"); }
-@font-face { font-family: 'Gotham Light'; font-style: normal; font-weight: normal; src: url("../../font/GothamLight.woff") format("woff"); }
-@font-face { font-family: 'Gotham Medium'; font-style: normal; font-weight: normal; src: url("../../font/GothamMedium.woff") format("woff"); }
-@font-face { font-family: 'Gotham Medium'; font-style: normal; font-weight: normal; src: url("../../font/GothamMedium_1.woff") format("woff"); }
-@font-face { font-family: 'Gotham Bold'; font-style: normal; font-weight: normal; src: url("../../font/GothamBold.woff") format("woff"); }
-@font-face { font-family: 'Gotham Bold'; font-style: normal; font-weight: normal; src: url("../../font/Gotham-Bold.woff") format("woff"); }
-@font-face { font-family: 'Gotham Light Regular'; font-style: normal; font-weight: normal; src: url("../../font/Gotham-Light.woff") format("woff"); }
-@font-face { font-family: 'Gotham Thin Regular'; font-style: normal; font-weight: normal; src: url("../../font/Gotham-Thin.woff") format("woff"); }
-@font-face { font-family: 'Gotham XLight Regular'; font-style: normal; font-weight: normal; src: url("../../font/Gotham-XLight.woff") format("woff"); }
-html { font-size: 14pt; -webkit-font-smoothing: antialiased; -moz-osx-font-smoothing: grayscale; text-rendering: optimizeLegibility; }
+@font-face { font-family: 'Gotham'; src: url("https://majinmaru.github.io/hidden-figure/common/font/Gotham-Light.eot"); src: url("https://majinmaru.github.io/hidden-figure/common/font/Gotham-Light.eot?#iefix") format("embedded-opentype"), url("https://majinmaru.github.io/hidden-figure/common/font/Gotham-Light.woff2") format("woff2"), url("https://majinmaru.github.io/hidden-figure/common/font/Gotham-Light.woff") format("woff"), url("https://majinmaru.github.io/hidden-figure/common/font/Gotham-Light.ttf") format("truetype"), url("https://majinmaru.github.io/hidden-figure/common/font/Gotham-Light.svg#Gotham-Light") format("svg"); font-weight: 300; font-style: normal; }
+@font-face { font-family: 'Gotham'; src: url("https://majinmaru.github.io/hidden-figure/common/font/Gotham-Bold.eot"); src: url("https://majinmaru.github.io/hidden-figure/common/font/Gotham-Bold.eot?#iefix") format("embedded-opentype"), url("https://majinmaru.github.io/hidden-figure/common/font/Gotham-Bold.woff2") format("woff2"), url("https://majinmaru.github.io/hidden-figure/common/font/Gotham-Bold.woff") format("woff"), url("https://majinmaru.github.io/hidden-figure/common/font/Gotham-Bold.ttf") format("truetype"), url("https://majinmaru.github.io/hidden-figure/common/font/Gotham-Bold.svg#Gotham-Bold") format("svg"); font-weight: bold; font-style: normal; }
+@font-face { font-family: 'Gotham'; src: url("https://majinmaru.github.io/hidden-figure/common/font/Gotham-Black.eot"); src: url("https://majinmaru.github.io/hidden-figure/common/font/Gotham-Black.eot?#iefix") format("embedded-opentype"), url("https://majinmaru.github.io/hidden-figure/common/font/Gotham-Black.woff2") format("woff2"), url("https://majinmaru.github.io/hidden-figure/common/font/Gotham-Black.woff") format("woff"), url("https://majinmaru.github.io/hidden-figure/common/font/Gotham-Black.ttf") format("truetype"), url("https://majinmaru.github.io/hidden-figure/common/font/Gotham-Black.svg#Gotham-Black") format("svg"); font-weight: 500; font-style: normal; }
+@font-face { font-family: 'Gotham'; src: url("https://majinmaru.github.io/hidden-figure/common/font/Gotham-Thin.eot"); src: url("https://majinmaru.github.io/hidden-figure/common/font/Gotham-Thin.eot?#iefix") format("embedded-opentype"), url("https://majinmaru.github.io/hidden-figure/common/font/Gotham-Thin.woff2") format("woff2"), url("https://majinmaru.github.io/hidden-figure/common/font/Gotham-Thin.woff") format("woff"), url("https://majinmaru.github.io/hidden-figure/common/font/Gotham-Thin.ttf") format("truetype"), url("https://majinmaru.github.io/hidden-figure/common/font/Gotham-Thin.svg#Gotham-Thin") format("svg"); font-weight: 100; font-style: normal; }
+@font-face { font-family: 'Gotham'; src: url("https://majinmaru.github.io/hidden-figure/common/font/Gotham-Book.eot"); src: url("https://majinmaru.github.io/hidden-figure/common/font/Gotham-Book.eot?#iefix") format("embedded-opentype"), url("https://majinmaru.github.io/hidden-figure/common/font/Gotham-Book.woff2") format("woff2"), url("https://majinmaru.github.io/hidden-figure/common/font/Gotham-Book.woff") format("woff"), url("https://majinmaru.github.io/hidden-figure/common/font/Gotham-Book.ttf") format("truetype"), url("https://majinmaru.github.io/hidden-figure/common/font/Gotham-Book.svg#Gotham-Book") format("svg"); font-weight: normal; font-style: normal; }
+html { font-size: 14pt; -webkit-font-smoothing: antialiased; -moz-osx-font-smoothing: grayscale; text-rendering: optimizeLegibility; background-color: #f3f3f3; }
+
+.container { width: 100%; position: relative; overflow: hidden; }
+.container .brief { position: relative; width: 92%; height: 25vw; margin-left: 4%; background-repeat: no-repeat; background-size: cover; overflow: hidden; }
+.container .brief .brief-img { position: relative; width: 33%; height: 100%; margin-left: 62%; overflow: hidden; }
+.container .brief .brief-img img { position: relative; width: 100%; height: auto; display: block; }
+.container .brief .brief-info { position: absolute; top: 0; left: calc(100% / 12); width: calc((100% / 12) * 7); height: 100%; -webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box; padding: 1% 0 1% 0; display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-direction: column; -ms-flex-direction: column; flex-direction: column; -webkit-box-pack: center; -ms-flex-pack: center; justify-content: center; }
+.container .brief .brief-info .brief-info__category { position: relative; width: 9.5rem; height: 1.5rem; margin-top: 1.5rem; }
+.container .brief .brief-info .brief-info__category img { position: relative; display: block; width: 100%; height: auto; }
+.container .brief .brief-info .brief-info__title { position: relative; font-size: 4rem; font-family: 'Teko'; font-weight: 500; color: white; line-height: 0.9; letter-spacing: 7px; margin-top: 2rem; }
+.container .brief .brief-info .brief-info__content { position: relative; width: 100%; height: 7rem; background-color: rgba(255, 255, 255, 0.7); -webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box; padding: 0 2rem 0 2rem; display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-align: center; -ms-flex-align: center; align-items: center; margin-top: 2rem; }
+.container .brief .brief-info .brief-info__content .info-content__text { width: 14%; margin-left: 2%; display: inline-block; }
+.container .brief .brief-info .brief-info__content .info-content__text.period { width: 32%; }
+.container .brief .brief-info .brief-info__content .info-content__text.skill { width: 50%; }
+.container .brief .brief-info .brief-info__content .info-content__text .info-content__text-title { position: relative; width: 100%; font-size: 1rem; font-family: 'Nanum Barun Gothic', sans-serif; font-weight: 300; color: #575757; }
+.container .brief .brief-info .brief-info__content .info-content__text .info-content__text-body { position: relative; width: 100%; font-size: 1.2rem; font-family: 'Nanum Barun Gothic', sans-serif; color: #575757; font-weight: 700; margin-top: 0.5rem; }
+.container .btn-wrapper { position: absolute; top: 60vh; left: 0; right: 0; width: 100%; height: 4rem; display: -webkit-box; display: -ms-flexbox; display: flex; }
+.container .btn-wrapper.sticky { position: fixed; top: -4rem; left: 0; background-color: #575757; z-index: 9990; -webkit-transform: translateY(4rem); -ms-transform: translateY(4rem); transform: translateY(4rem); -webkit-transition: transform 0.3s ease, background-color 0.3s ease; -o-transition: transform 0.3s ease, background-color 0.3s ease; transition: transform 0.3s ease, background-color 0.3s ease; }
+.container .btn-wrapper.sticky .btn-tab { z-index: 9991; margin-left: 0; }
+.container .btn-wrapper.sticky .btn-tab:nth-of-type(1) { margin-left: 27.5%; }
+.container .btn-wrapper.sticky .btn-tab.current a { border: none; }
+.container .btn-wrapper.sticky .btn-tab a { border: none; }
+.container .btn-wrapper.sticky .btn-tab a:hover { border: none; }
+.container .btn-wrapper.sticky .btn-tab a span { color: white; }
+.container .btn-wrapper .btn-tab { width: 15%; height: 100%; margin-left: 2%; }
+.container .btn-wrapper .btn-tab:nth-of-type(1) { margin-left: 25.5%; }
+.container .btn-wrapper .btn-tab.current a { background-color: #04080b; border: 1px solid #04080b; }
+.container .btn-wrapper .btn-tab.current a span { color: white; font-weight: 400; }
+.container .btn-wrapper .btn-tab a { width: 100%; height: 100%; background-color: transparent; border: 1px solid #04080b; text-decoration: none; text-align: center; display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-align: center; -ms-flex-align: center; align-items: center; }
+.container .btn-wrapper .btn-tab a:hover { background-color: #04080b; border: 1px solid #04080b; }
+.container .btn-wrapper .btn-tab a:hover span { color: white; font-weight: 400; }
+.container .btn-wrapper .btn-tab a span { width: 100%; text-decoration: none; color: #575757; font-family: 'Nanum Barun Gothic', sans-serif; font-weight: 300; font-size: 1rem; }
+.container .contents { position: relative; width: 100%; margin-top: 13vw; }
+.container .contents .content .content-title { position: relative; width: 25%; margin-left: 37.5%; }
+.container .contents .content .content-title.right { width: calc(100% / 6); margin-left: calc((100% / 6) * 5); }
+.container .contents .content .content-title.right .content-title__line { background-color: #575757; }
+.container .contents .content .content-title.right .content-title__subtitle { color: #575757; }
+.container .contents .content .content-title.right .content-title__title { color: #575757; }
+.container .contents .content .content-title.left { width: calc(100% / 6); margin-left: calc(100% / 12); }
+.container .contents .content .content-title.left .content-title__line { background-color: white; }
+.container .contents .content .content-title.left .content-title__subtitle { color: white; }
+.container .contents .content .content-title.left .content-title__title { color: white; }
+.container .contents .content .content-title .content-title__line { position: relative; width: 11rem; height: 1px; margin-left: calc((100% - 11rem) / 2); display: inline-block; background-color: #575757; }
+.container .contents .content .content-title .content-title__line.bottom { margin-top: -0.3rem; }
+.container .contents .content .content-title .content-title__subtitle { width: 100%; height: 0.7rem; text-align: center; font-family: 'Gotham'; font-weight: 300; font-style: normal; font-size: 1rem; line-height: 1; color: #575757; margin-top: 0.3rem; }
+.container .contents .content .content-title .content-title__title { width: 100%; text-align: center; font-family: 'Teko'; font-weight: 500; font-size: 2.85rem; line-height: 1; color: #575757; letter-spacing: 5px; margin-top: 0.5rem; }
+.container .contents .content-01 { position: relative; width: 100%; -webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box; padding: 0 4%; }
+.container .contents .content-01 .content-01__logo { position: relative; width: 9.5rem; margin-left: calc((100% - 9.5rem) / 2); }
+.container .contents .content-01 .content-01__logo img { position: relative; width: 100%; height: auto; display: block; }
+.container .contents .content-01 .content-01__body { position: relative; width: 100%; height: 32vw; display: -webkit-box; display: -ms-flexbox; display: flex; }
+.container .contents .content-01 .content-01__body .content-01__body-text { width: 50%; height: 100%; display: inline-block; -webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box; padding: 0 6%; display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-align: center; -ms-flex-align: center; align-items: center; }
+.container .contents .content-01 .content-01__body .content-01__body-text p { width: 100%; font-family: 'Nanum Barun Gothic'; color: #575757; font-size: 1rem; line-height: 1.75; word-wrap: break-word; word-break: keep-all; }
+.container .contents .content-01 .content-01__body .content-01__body-text p span { font-weight: 700; }
+.container .contents .content-01 .content-01__body .content-01__body-img { position: relative; width: 50%; height: 100%; display: inline-block; overflow: hidden; }
+.container .contents .content-01 .content-01__body .content-01__body-img img { position: relative; width: 90%; height: auto; }
+.container .contents .content-02 { position: relative; width: 100%; -webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box; padding: 9rem 4%; background-color: #04080b; display: -webkit-box; display: -ms-flexbox; display: flex; }
+.container .contents .content-02 .content-02__left { position: relative; display: inline-block; width: 25%; margin-left: calc(100% / 12); }
+.container .contents .content-02 .content-02__left .left-title { width: 100%; }
+.container .contents .content-02 .content-02__left .left-title .left-title__line { position: relative; width: 11rem; height: 1px; background-color: white; display: inline-block; }
+.container .contents .content-02 .content-02__left .left-title .left-title__line.bottom { margin-top: -0.3rem; }
+.container .contents .content-02 .content-02__left .left-title .left-title__subtitle { width: 100%; height: 0.7rem; font-family: 'Gotham'; font-weight: 300; font-style: normal; font-size: 1rem; line-height: 1; color: white; margin-top: 0.3rem; }
+.container .contents .content-02 .content-02__left .left-title .left-title__title { width: 100%; font-family: 'Teko'; font-weight: 500; font-size: 2.85rem; line-height: 1; color: white; letter-spacing: 5px; margin-top: 0.5rem; }
+.container .contents .content-02 .content-02__left .left-text { position: relative; margin-top: 4rem; width: 90%; font-family: 'Nanum Barun Gothic'; font-weight: 300; font-size: 1rem; line-height: 1.75; color: white; word-break: keep-all; word-wrap: break-word; }
+.container .contents .content-02 .content-02__left .left-text span { color: #ff73a1; font-weight: bold; }
+.container .contents .content-02 .content-02__right { position: relative; display: inline-block; width: 50%; margin-left: calc(100% / 12); margin-right: calc(100% / 12); }
+.container .contents .content-02 .content-02__right img { position: relative; width: 100%; height: auto; display: block; margin-top: 1rem; }
+.container .contents .content-03 { position: relative; width: 100%; -webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box; padding: 9rem 4%; }
+.container .contents .content-03 .content-03__flow { position: relative; width: 90%; margin-left: 5%; }
+.container .contents .content-03 .content-03__flow img { position: relative; width: 100%; height: auto; display: block; }
+.container .contents .content-04 { position: relative; width: 100%; -webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box; padding: 9rem 4% 0 4%; background-color: #04080b; overflow: hidden; }
+.container .contents .content-04 .content-title .content-title__line { background-color: white; }
+.container .contents .content-04 .content-title .content-title__subtitle { color: white; }
+.container .contents .content-04 .content-title .content-title__title { color: white; }
+.container .contents .content-04 .content-04__concept { width: calc((100% / 6) * 5); margin-left: calc(100% / 12); margin-top: -16.5rem; }
+.container .contents .content-04 .content-04__concept img { position: relative; width: 100%; height: auto; display: block; }
+.container .contents .content-05 { position: relative; width: 100%; -webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box; padding: 10rem 4% 0 4%; }
+.container .contents .content-05 .content-05__color { position: relative; width: 100%; margin-top: 5rem; display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box; padding-left: calc(100% / 6); padding-right: calc(100% / 6); -webkit-box-align: center; -ms-flex-align: center; align-items: center; }
+.container .contents .content-05 .content-05__color .color-text { position: relative; width: 50%; display: inline-block; font-size: 1rem; line-height: 1.75; color: #575757; font-family: 'Nanum Barun Gothic'; -webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box; padding-right: 8%; word-wrap: break-word; word-break: keep-all; }
+.container .contents .content-05 .content-05__color .color-img { position: relative; width: 50%; display: inline-block; }
+.container .contents .content-05 .content-05__color .color-img img { position: relative; width: 100%; height: auto; display: block; }
+.container .contents .content-06 { position: relative; width: 100%; -webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box; padding: 10rem 4%; }
+.container .contents .content-06 .content-06__typo { position: relative; width: calc((100% / 6) * 5); margin-left: calc(100% / 12); margin-top: 4rem; }
+.container .contents .content-06 .content-06__typo .typo-img { position: relative; width: 75%; height: auto; display: block; margin-left: 10%; margin-top: 4rem; }
+.container .contents .content-06 .content-06__typo .typo-img.second { margin-left: 18.5%; }
+.container .contents .content-07 { position: relative; width: 100%; -webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box; padding: 8rem 4%; background-color: #04080b; }
+.container .contents .content-07 .content-title .content-title__line { background-color: white; }
+.container .contents .content-07 .content-title .content-title__subtitle { color: white; }
+.container .contents .content-07 .content-title .content-title__title { color: white; }
+.container .contents .content-07 .content-07__guide { position: relative; width: calc((100% / 6) * 5); margin-left: calc(100% / 12); margin-top: 5rem; }
+.container .contents .content-07 .content-07__guide img { position: relative; width: 90%; height: auto; margin-left: 5%; }
+.container .contents .content-08 { position: relative; width: 100%; -webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box; padding: 8rem 4% 6rem 4%; }
+.container .contents .content-08 .content-08__icon { position: relative; width: calc((100% / 6) * 5); margin-left: calc(100% / 12); margin-top: 5rem; }
+.container .contents .content-08 .content-08__icon img { position: relative; width: 90%; height: auto; margin-left: 5%; }
+.container .contents .banner { position: relative; width: 100%; height: 28vw; margin-top: 4rem; overflow: hidden; display: block; }
+.container .contents .banner .banner-img { position: relative; width: 100%; height: 100%; overflow: hidden; }
+.container .contents .banner .banner-img img { position: relative; width: 100%; }
+.container .contents .banner .banner-text { position: absolute; width: 25%; height: 100%; top: 0; left: 68%; }
+.container .contents .banner .banner-text .banner-text__category { position: relative; width: 9.5rem; height: 1.5rem; margin-top: 7vw; }
+.container .contents .banner .banner-text .banner-text__category img { position: relative; width: 100%; }
+.container .contents .banner .banner-text .banner-text__title { position: relative; font-size: 4rem; font-family: 'Teko'; font-weight: 500; color: white; line-height: 0.9; letter-spacing: 7px; margin-top: 3rem; }
+.container .contents .banner .banner-text .banner-text__goto { position: relative; width: 65%; height: 2rem; margin-top: 2rem; text-decoration: none; display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-align: center; -ms-flex-align: center; align-items: center; }
+.container .contents .banner .banner-text .banner-text__goto .goto-text { position: relative; font-family: 'Nanum Barun Gothic', sans-serif; font-size: 1.2rem; color: white; margin-right: 2rem; }
+.container .contents .banner .banner-text .banner-text__goto .goto-arrow { position: relative; width: 2.4rem; height: 1.7rem; float: right; }
+.container .contents .banner .banner-text .banner-text__goto .goto-arrow img { position: relative; width: 100%; display: block; }
+
+@media screen and (min-width: 768px) and (max-width: 1600px) { html { font-size: 13px; } }
 
 /*# sourceMappingURL=index.css.map */
