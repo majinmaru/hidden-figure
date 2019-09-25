@@ -404,7 +404,7 @@ html {
 						margin-top: 1.5rem;
 						width: 70%;
 						font-family: 'Nanum Barun Gothic';
-						font-size: 0.9rem;
+						font-size: 1rem;
 						line-height: 1.75;
 						font-weight: 300;
 						color: $gray1;
@@ -720,8 +720,10 @@ html {
 .slick-slide:focus { 
 	outline: none; 
 }
+/*
 @media screen and (min-width: 768px) and (max-width: 1600px) {
 	html {
-		font-size: 13px;
+		font-size: 12pt;
 	}
 }
+*/
