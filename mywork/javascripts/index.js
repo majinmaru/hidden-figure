@@ -22,16 +22,6 @@ $(document).ready(function(){
 		$('.worklist').eq(currentIndex).addClass('current');
 		$('.worklist').eq(currentIndex).siblings().removeClass('current');
 		/*
-		$(currentId + '-list').find('.worklist-card-wrapper').slick({
-			centerMode: true,
-		    infinite: true,
-		    slidesToShow: 1,
-		    variableWidth: true,
-		    centerPadding: 0,
-		    prevArrow: $(currentId + '-list .worklist-arrow__btn.prev'),
-		    nextArrow: $(currentId + '-list .worklist-arrow__btn.next')
-		});
-		*/
 		if($(currentId + '-list').find('.worklist-card-wrapper').hasClass('slick-initialized')){
 			return false;
 		} else {
@@ -44,6 +34,32 @@ $(document).ready(function(){
 			    prevArrow: $(currentId + '-list .worklist-arrow__btn.prev'),
 			    nextArrow: $(currentId + '-list .worklist-arrow__btn.next')
 			});
+		}
+		*/
+		if($(currentId + '-list').find('.worklist-card-wrapper').not('slick-initialized')){
+			if ($(currentId + '-list').is('#promotion-list')) {
+				$(currentId + '-list').find('.worklist-card-wrapper').slick({
+					centerMode: true,
+					infinite: false,
+				    slidesToShow: 1,
+				    variableWidth: true,
+				    centerPadding: 0,
+				    prevArrow: $(currentId + '-list .worklist-arrow__btn.prev'),
+				    nextArrow: $(currentId + '-list .worklist-arrow__btn.next')
+				});
+			} else {
+				$(currentId + '-list').find('.worklist-card-wrapper').slick({
+					centerMode: true,
+				    infinite: true,
+				    slidesToShow: 1,
+				    variableWidth: true,
+				    centerPadding: 0,
+				    prevArrow: $(currentId + '-list .worklist-arrow__btn.prev'),
+				    nextArrow: $(currentId + '-list .worklist-arrow__btn.next')
+				});
+			}
+		} else {
+			return false;
 		}
 	});
 

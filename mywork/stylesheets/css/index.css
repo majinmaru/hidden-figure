@@ -9,16 +9,14 @@ html { font-size: 14pt; -webkit-font-smoothing: antialiased; -moz-osx-font-smoot
 .slick-slide:focus { outline: none; }
 
 .container { width: 100%; position: relative; }
-.container .worktab-section { width: 100%; height: 3rem; position: relative; background-image: url("../../images/worktab-bg.png"); background-repeat: repeat-x; background-size: 1px 3rem; }
+.container .worktab-section { width: 100%; height: 4rem; position: relative; border-top: 1px solid #a8a8a8; border-bottom: 1px solid #a8a8a8; }
 .container .worktab-section .worktab { width: 50%; height: 100%; margin-left: 25%; position: relative; padding: 0 5%; -webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box; display: -webkit-box; display: -ms-flexbox; display: flex; }
-.container .worktab-section .worktab .worktab-btn { width: 31%; height: 100%; margin-left: 3%; display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-align: center; -ms-flex-align: center; align-items: center; -webkit-box-pack: center; -ms-flex-pack: center; justify-content: center; background-color: #f3f3f3; border: 1px solid #a8a8a8; cursor: pointer; }
-.container .worktab-section .worktab .worktab-btn.current { border: 1px solid #67dca3; }
-.container .worktab-section .worktab .worktab-btn.current .worktab-btn__text { color: #67dca3; font-family: 'Gotham'; font-weight: normal; font-style: normal; }
+.container .worktab-section .worktab .worktab-btn { width: 31%; height: 100%; margin-left: 3%; display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-align: center; -ms-flex-align: center; align-items: center; -webkit-box-pack: center; -ms-flex-pack: center; justify-content: center; background-color: #f3f3f3; cursor: pointer; }
+.container .worktab-section .worktab .worktab-btn.current .worktab-btn__text { color: #67dca3; font-family: 'Gotham'; font-weight: bold; font-style: normal; }
 .container .worktab-section .worktab .worktab-btn:nth-of-type(1) { margin-left: 0; }
-.container .worktab-section .worktab .worktab-btn:hover { border: 1px solid #67dca3; }
-.container .worktab-section .worktab .worktab-btn:hover .worktab-btn__text { color: #67dca3; color: #67dca3; font-family: 'Gotham'; font-weight: normal; font-style: normal; }
-.container .worktab-section .worktab .worktab-btn .worktab-btn__text { font-family: 'Gotham'; font-weight: 300; font-style: normal; color: #a8a8a8; font-size: 0.875rem; letter-spacing: 2px; }
-.container .worklist-section { width: 100%; height: calc(100vh - 19.75rem); position: relative; -webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box; }
+.container .worktab-section .worktab .worktab-btn:hover .worktab-btn__text { color: #67dca3; font-family: 'Gotham'; font-weight: bold; font-style: normal; }
+.container .worktab-section .worktab .worktab-btn .worktab-btn__text { font-family: 'Gotham'; font-weight: 300; font-style: normal; color: #a8a8a8; font-size: 1rem; letter-spacing: 2px; }
+.container .worklist-section { width: 100%; height: calc(100vh - 20.75rem); position: relative; -webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box; }
 .container .worklist-section .worklist { width: 100%; height: 100%; position: relative; overflow: hidden; display: none; z-index: 9000; }
 .container .worklist-section .worklist.current { display: block; }
 .container .worklist-section .worklist .worklist-card-wrapper { width: 100vw; height: 100%; }
@@ -27,11 +25,11 @@ html { font-size: 14pt; -webkit-font-smoothing: antialiased; -moz-osx-font-smoot
 .container .worklist-section .worklist .worklist-card-wrapper .worklist-card.slick-center .card-detail { display: block; }
 .container .worklist-section .worklist .worklist-card-wrapper .worklist-card .card-wrapper { position: relative; width: 100%; height: 60%; margin-top: 9%; }
 .container .worklist-section .worklist .worklist-card-wrapper .worklist-card .card-wrapper .card-img { width: calc((100% / 3) * 2); height: 100%; margin-left: calc(100% / 6); position: relative; overflow: hidden; display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-align: center; -ms-flex-align: center; align-items: center; background-size: cover; }
-.container .worklist-section .worklist .worklist-card-wrapper .worklist-card .card-wrapper .card-img img { position: relative; width: 100%; height: auto; margin-left: -15%; display: inline-block; }
+.container .worklist-section .worklist .worklist-card-wrapper .worklist-card .card-wrapper .card-img img { position: relative; width: auto; height: 100%; margin-left: -20%; display: inline-block; }
 .container .worklist-section .worklist .worklist-card-wrapper .worklist-card .card-wrapper .card-indicator { width: 1.5rem; height: 1.5rem; border-radius: 50%; background-color: transparent; border: 1px solid #67dca3; position: absolute; top: 0; right: 10%; }
 .container .worklist-section .worklist .worklist-card-wrapper .worklist-card .card-wrapper .card-title { width: calc(100% / 3); font-family: 'Teko'; font-weight: 500; font-size: 3rem; line-height: 1; color: #262626; position: absolute; top: 50%; left: calc((100% / 3) * 2); letter-spacing: 5px; -webkit-transform: translateY(-50%); -ms-transform: translateY(-50%); transform: translateY(-50%); }
 .container .worklist-section .worklist .worklist-card-wrapper .worklist-card .card-wrapper .card-number { width: calc(100% / 6); text-align: right; position: absolute; top: 80%; right: 0; font-family: 'Gotham'; font-weight: 300; font-style: normal; color: #8c8c8c; font-size: 1rem; letter-spacing: 1px; }
-.container .worklist-section .worklist .worklist-card-wrapper .worklist-card .card-detail { position: absolute; width: 100%; height: 2rem; overflow: hidden; display: none; text-align: center; bottom: 6%; }
+.container .worklist-section .worklist .worklist-card-wrapper .worklist-card .card-detail { position: absolute; width: 100%; height: 2rem; overflow: hidden; display: none; text-align: center; bottom: 8%; }
 .container .worklist-section .worklist .worklist-card-wrapper .worklist-card .card-detail .card-detail__text { position: relative; font-family: 'Gotham'; font-weight: 300; font-style: normal; color: #8c8c8c; font-size: 1rem; cursor: pointer; text-decoration: none; }
 .container .worklist-section .worklist .worklist-card-wrapper .worklist-card .card-detail .card-detail__line { width: 0; height: 1px; background-color: #8c8c8c; display: block; margin-left: calc((100% - 4rem) / 2); margin-top: 0.5rem; position: relative; -webkit-transition: all 0.3s ease; -o-transition: all 0.3s ease; transition: all 0.3s ease; }
 .container .worklist-section .worklist .worklist-card-wrapper .worklist-card .card-detail .card-detail__line.hover { width: 4rem; }
