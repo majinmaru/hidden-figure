@@ -1,10 +1,6 @@
 $(document).ready(function(){
 	$("html").niceScroll();
 
-	AOS.init({
-	   	duration: 1000
-	});
-
 	var stickyHeader = function() {
 		var contentsTop = $(".contents").offset().top;
 		var scrollTop = $(window).scrollTop();
