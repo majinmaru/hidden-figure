@@ -248,9 +248,9 @@ html {
 				}
 				.content-title__line {
 					position: relative;
-					width: 11rem;
+					width: 10rem;
 					height: 1px;
-					margin-left: calc((100% - 11rem) / 2);
+					margin-left: calc((100% - 10rem) / 2);
 					display: inline-block;
 					background-color: $gray1;
 					&.bottom {
@@ -259,7 +259,7 @@ html {
 				}
 				.content-title__subtitle {
 					width: 100%;
-					height: 0.7rem;
+					height: 0.5rem;
 					text-align: center;
 					font-family: 'Gotham';
 					font-weight: 300;
@@ -278,7 +278,7 @@ html {
 					line-height: 1;
 					color: $gray1;
 					letter-spacing: 5px;
-					margin-top: 0.5rem;
+					margin-top: 0.7rem;
 				}
 			}
 		}
@@ -477,7 +477,7 @@ html {
 				width: 100%;
 				background-color: #04080b;
 				@include box-sizing(border-box);
-				padding: 3.8vw 4% 6vw 4%;
+				padding: 5.3vw 4% 6vw 4%;
 				img {
 					position: relative;
 					width: calc((100% / 6) * 5);
@@ -585,7 +585,7 @@ html {
 			position: relative;
 			width: 100%;
 			@include box-sizing(border-box);
-			padding-top: 8vw;
+			padding-top: 9vw;
 			background-image: url('../../images/d-content-08-1.png');
 			background-size: 100%;
 			background-position: center top;
@@ -595,13 +595,13 @@ html {
 				width: 88%;
 				margin-left: 12%;
 				@include flexbox();
-				margin-top: 4rem;
+				margin-top: 6rem;
 				.tutorial-text {
 					position: relative;
 					width: 39.5%;
 					display: inline-block;
 					@include box-sizing(border-box);
-					padding: 20vw 5% 0 5%;
+					padding: 22vw 7% 0 5%;
 					.tutorial-text__img {
 						position: relative;
 						width: 65%;
@@ -648,7 +648,7 @@ html {
 		.content-09 {
 			position: relative;
 			width: 100%;
-			height: 42vw;
+			height: 41.5vw;
 			overflow: hidden;
 			background-color: #04080b;
 			@include flexbox();
@@ -671,12 +671,12 @@ html {
 				.content-09__text-title {
 					position: relative;
 					width: 100%;
-					margin-top: 1rem;
+					margin-top: 4rem;
 					.text-title__line {
-						width: 11rem;
+						width: 10rem;
 						height: 1px;
-						margin-left: calc((100% - 11rem) / 2);
-						margin-right: calc((100% - 11rem) / 2);
+						margin-left: calc((100% - 10rem) / 2);
+						margin-right: calc((100% - 10rem) / 2);
 						display: inline-block;
 						background-color: white;
 						&.bottom {
@@ -685,7 +685,7 @@ html {
 					}
 					.text-title__subtitle {
 						position: relative;
-						height: 0.7rem;
+						height: 0.5rem;
 						text-align: center;
 						font-family: 'Gotham';
 						font-weight: 300;
@@ -704,7 +704,7 @@ html {
 						line-height: 1;
 						color: white;
 						letter-spacing: 5px;
-						margin-top: 0.5rem;
+						margin-top: 0.7rem;
 					}
 				}
 				.content-09__text-img {
@@ -745,12 +745,12 @@ html {
 			position: relative;
 			width: 100%;
 			@include box-sizing(border-box);
-			padding-top: 8vw;
+			padding-top: 11vw;
 			overflow:hidden;
 			.content-10__pages {
 				position: relative;
 				width: 100%;
-				margin-top: -22.1vw;
+				margin-top: -23.2vw;
 				img {
 					position: relative;
 					width: 100%;
@@ -765,8 +765,8 @@ html {
 			padding: 7vw 4% 5vw 4%;
 			.content-11__thankyou {
 				position: relative;
-				width: 50%;
-				margin-left: 25%;
+				width: 40%;
+				margin-left: 30%;
 				display: block;
 				.thankyou-img {
 					position: relative;
@@ -855,11 +855,19 @@ html {
 	}
 }
 @media screen and (min-width: 768px) and (max-width: 1600px) {
+	html {
+		font-size: $laptop;
+	}
 	.container {
 		.contents {
 			.content-05 {
 				.content-05__filter {
-					padding: 5.5vw 4% 6vw 4%;
+					padding: 4.7vw 4% 6vw 4%;
+				}
+			}
+			.content-10 {
+				.content-10__pages {
+					margin-top: -24.2vw;
 				}
 			}
 		}

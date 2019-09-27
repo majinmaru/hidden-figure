@@ -54,7 +54,7 @@ html { font-size: 12pt; -webkit-font-smoothing: antialiased; -moz-osx-font-smoot
 .container .contents .content-01 .content-01__logo { position: relative; width: 9.5rem; margin-left: calc((100% - 9.5rem) / 2); }
 .container .contents .content-01 .content-01__logo img { position: relative; width: 100%; height: auto; display: block; }
 .container .contents .content-01 .content-01__body { position: relative; width: 100%; height: 32vw; display: -webkit-box; display: -ms-flexbox; display: flex; }
-.container .contents .content-01 .content-01__body .content-01__body-text { width: 50%; height: 100%; display: inline-block; -webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box; padding: 0 6%; display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-align: center; -ms-flex-align: center; align-items: center; }
+.container .contents .content-01 .content-01__body .content-01__body-text { width: 50%; height: 100%; display: inline-block; -webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box; padding: 0 9%; display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-align: center; -ms-flex-align: center; align-items: center; }
 .container .contents .content-01 .content-01__body .content-01__body-text p { width: 100%; font-family: 'Nanum Barun Gothic'; color: #575757; font-size: 1rem; line-height: 1.75; word-wrap: break-word; word-break: keep-all; }
 .container .contents .content-01 .content-01__body .content-01__body-text p span { font-weight: 700; }
 .container .contents .content-01 .content-01__body .content-01__body-img { position: relative; width: 50%; height: 100%; display: inline-block; overflow: hidden; }
@@ -92,10 +92,10 @@ html { font-size: 12pt; -webkit-font-smoothing: antialiased; -moz-osx-font-smoot
 .container .contents .content-07 .content-title .content-title__line { background-color: white; }
 .container .contents .content-07 .content-title .content-title__subtitle { color: white; }
 .container .contents .content-07 .content-title .content-title__title { color: white; }
-.container .contents .content-07 .content-07__guide { position: relative; width: calc((100% / 6) * 5); margin-left: calc(100% / 12); margin-top: 5rem; }
-.container .contents .content-07 .content-07__guide img { position: relative; width: 90%; height: auto; margin-left: 5%; }
+.container .contents .content-07 .content-07__guide { position: relative; width: 80%; margin-left: 10%; margin-top: 5rem; }
+.container .contents .content-07 .content-07__guide img { position: relative; width: 90%; height: auto; margin-left: 6%; }
 .container .contents .content-08 { position: relative; width: 100%; -webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box; padding: 8rem 4% 6rem 4%; }
-.container .contents .content-08 .content-08__icon { position: relative; width: calc((100% / 6) * 5); margin-left: calc(100% / 12); margin-top: 5rem; }
+.container .contents .content-08 .content-08__icon { position: relative; width: 68%; margin-left: 16%; margin-top: 5rem; }
 .container .contents .content-08 .content-08__icon img { position: relative; width: 90%; height: auto; margin-left: 5%; }
 .container .contents .banner { position: relative; width: 100%; height: 28vw; margin-top: 4rem; overflow: hidden; display: block; }
 .container .contents .banner .banner-img { position: relative; width: 100%; height: 100%; overflow: hidden; }
@@ -108,5 +108,7 @@ html { font-size: 12pt; -webkit-font-smoothing: antialiased; -moz-osx-font-smoot
 .container .contents .banner .banner-text .banner-text__goto .goto-text { position: relative; font-family: 'Nanum Barun Gothic', sans-serif; font-size: 1.2rem; color: white; margin-right: 2rem; }
 .container .contents .banner .banner-text .banner-text__goto .goto-arrow { position: relative; width: 2.4rem; height: 1.7rem; float: right; }
 .container .contents .banner .banner-text .banner-text__goto .goto-arrow img { position: relative; width: 100%; display: block; }
+
+@media screen and (min-width: 768px) and (max-width: 1600px) { html { font-size: 10pt; } }
 
 /*# sourceMappingURL=index.css.map */

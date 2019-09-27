@@ -3,12 +3,6 @@
 @import 'base/mixin.scss';
 @import 'base/variable.scss';
 @import 'base/keyframes.scss';
-html {
-	font-size: $desktop;
-	-webkit-font-smoothing: antialiased;
-	-moz-osx-font-smoothing: grayscale;
-	text-rendering: optimizeLegibility;
-}
 .header {
 	width: 100%;
 	height: 11.5rem;

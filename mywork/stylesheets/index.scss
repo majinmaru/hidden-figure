@@ -116,7 +116,7 @@ html {
 					.card-wrapper {
 						position: relative;
 						width: 100%;
-						height: 60%;
+						height: 57%;
 						margin-top: 9%;
 						.card-img {
 							width: calc((100% / 3) * 2);
@@ -149,7 +149,7 @@ html {
 							width: calc(100% / 3);
 							font-family: 'Teko';
 							font-weight: 500;
-							font-size: 3rem;
+							font-size: 3.5rem;
 							line-height: 1;
 							color: $black;
 							position: absolute;
@@ -179,7 +179,7 @@ html {
 						overflow: hidden;
 						display: none;
 						text-align: center;
-						bottom: 8%;
+						bottom: 10%;
 						.card-detail__text {
 							position: relative;
 							font-family: 'Gotham';
@@ -216,12 +216,12 @@ html {
 				}
 				&.prev {
 					position: absolute;
-					bottom: 7%;
+					bottom: 9%;
 					left: 38%;
 				}
 				&.next {
 					position: absolute;
-					bottom: 7%;
+					bottom: 9%;
 					right: 38%;
 					img {
 						@include transform(rotateY(180deg));
@@ -233,6 +233,6 @@ html {
 }
 @media screen and (min-width: 768px) and (max-width: 1600px) {
 	html {
-		font-size: 13px;
+		font-size: $laptop;
 	}
 }
