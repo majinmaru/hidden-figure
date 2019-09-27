@@ -4,7 +4,7 @@
 @font-face { font-family: 'Gotham'; src: url("https://majinmaru.github.io/hidden-figure/common/font/Gotham-Black.eot"); src: url("https://majinmaru.github.io/hidden-figure/common/font/Gotham-Black.eot?#iefix") format("embedded-opentype"), url("https://majinmaru.github.io/hidden-figure/common/font/Gotham-Black.woff2") format("woff2"), url("https://majinmaru.github.io/hidden-figure/common/font/Gotham-Black.woff") format("woff"), url("https://majinmaru.github.io/hidden-figure/common/font/Gotham-Black.ttf") format("truetype"), url("https://majinmaru.github.io/hidden-figure/common/font/Gotham-Black.svg#Gotham-Black") format("svg"); font-weight: 500; font-style: normal; }
 @font-face { font-family: 'Gotham'; src: url("https://majinmaru.github.io/hidden-figure/common/font/Gotham-Thin.eot"); src: url("https://majinmaru.github.io/hidden-figure/common/font/Gotham-Thin.eot?#iefix") format("embedded-opentype"), url("https://majinmaru.github.io/hidden-figure/common/font/Gotham-Thin.woff2") format("woff2"), url("https://majinmaru.github.io/hidden-figure/common/font/Gotham-Thin.woff") format("woff"), url("https://majinmaru.github.io/hidden-figure/common/font/Gotham-Thin.ttf") format("truetype"), url("https://majinmaru.github.io/hidden-figure/common/font/Gotham-Thin.svg#Gotham-Thin") format("svg"); font-weight: 100; font-style: normal; }
 @font-face { font-family: 'Gotham'; src: url("https://majinmaru.github.io/hidden-figure/common/font/Gotham-Book.eot"); src: url("https://majinmaru.github.io/hidden-figure/common/font/Gotham-Book.eot?#iefix") format("embedded-opentype"), url("https://majinmaru.github.io/hidden-figure/common/font/Gotham-Book.woff2") format("woff2"), url("https://majinmaru.github.io/hidden-figure/common/font/Gotham-Book.woff") format("woff"), url("https://majinmaru.github.io/hidden-figure/common/font/Gotham-Book.ttf") format("truetype"), url("https://majinmaru.github.io/hidden-figure/common/font/Gotham-Book.svg#Gotham-Book") format("svg"); font-weight: normal; font-style: normal; }
-html { font-size: 12pt; -webkit-font-smoothing: antialiased; -moz-osx-font-smoothing: grayscale; text-rendering: optimizeLegibility; background-color: #f3f3f3; width: 100vw; height: 100vh; overflow: hidden; }
+html { font-size: 16px; -webkit-font-smoothing: antialiased; -moz-osx-font-smoothing: grayscale; text-rendering: optimizeLegibility; background-color: #f3f3f3; width: 100vw; height: 100vh; overflow: hidden; }
 
 .slick-slide:focus { outline: none; }
 
@@ -39,6 +39,6 @@ html { font-size: 12pt; -webkit-font-smoothing: antialiased; -moz-osx-font-smoot
 .container .worklist-section .worklist .worklist-arrow__btn.next { position: absolute; bottom: 9%; right: 38%; }
 .container .worklist-section .worklist .worklist-arrow__btn.next img { -webkit-transform: rotateY(180deg); -ms-transform: rotateY(180deg); transform: rotateY(180deg); }
 
-@media screen and (min-width: 768px) and (max-width: 1600px) { html { font-size: 11pt; } }
+@media screen and (min-width: 768px) and (max-width: 1600px) { html { font-size: 15px; } }
 
 /*# sourceMappingURL=index.css.map */
