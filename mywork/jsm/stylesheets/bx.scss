@@ -323,6 +323,7 @@ html {
 				width: 58%;
 				margin-left: 21%;
 				margin-top: 3.6rem;
+				cursor: pointer;
 				img {
 					position: relative;
 					width: 100%;
@@ -643,6 +644,21 @@ html {
 				width: 100%;
 			}
 		}
+		.content-07 {
+			display: none;
+			width: 100%;
+			position: absolute;
+			top: 0;
+			left: 0;
+			right: 0;
+			z-index: 9996;
+			cursor: pointer;
+			img {
+				position: relative;
+				width: 100%;
+				height: auto;
+			}
+		}
 		.banner {
 			position: relative;
 			width: 100%;
@@ -717,12 +733,43 @@ html {
 		}
 	}
 }
-.slick-slide:focus { 
-	outline: none; 
-}
 
 @media screen and (min-width: 768px) and (max-width: 1600px) {
 	html {
 		font-size: $laptop;
+	}
+	.container {
+		.contents {
+			.content-02 {
+				.content-02__explanation {
+					.explanation {
+						&:nth-of-type(1) {
+							margin-top: 24%;
+						}
+						&:nth-of-type(2) {
+							margin-top: -3%;
+						}
+						&:nth-of-type(3) {
+							margin-top: 4%;
+						}
+						&:nth-of-type(4) {
+							margin-top: 20%;
+						}
+						&:nth-of-type(5) {
+							margin-top: 13%;
+						}
+						&:nth-of-type(6) {
+							margin-top: 10%;
+						}
+						&:nth-of-type(7) {
+							margin-top: 8%;
+						}
+						&:nth-of-type(8) {
+							margin-top: 2%;
+						}
+					}
+				}
+			}
+		}
 	}
 }

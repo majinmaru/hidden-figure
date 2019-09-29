@@ -109,6 +109,6 @@ html { font-size: 16px; -webkit-font-smoothing: antialiased; -moz-osx-font-smoot
 .container .contents .banner .banner-text .banner-text__goto .goto-arrow { position: relative; width: 2.4rem; height: 1.7rem; float: right; }
 .container .contents .banner .banner-text .banner-text__goto .goto-arrow img { position: relative; width: 100%; display: block; }
 
-@media screen and (min-width: 768px) and (max-width: 1600px) { html { font-size: 10pt; } }
+@media screen and (min-width: 768px) and (max-width: 1600px) { html { font-size: 15px; } }
 
 /*# sourceMappingURL=index.css.map */
