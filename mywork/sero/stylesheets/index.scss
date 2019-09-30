@@ -24,9 +24,10 @@ html {
 		overflow: hidden;
 		.brief-img {
 			position: relative;
-			width: 33%;
+			width: 30%;
 			height: 100%;
-			margin-left: 62%;
+			margin-left: 59%;
+			margin-top: 2%;
 			overflow: hidden;
 			img {
 				position: relative;
@@ -261,11 +262,22 @@ html {
 			background-size: contain;
 			background-repeat: no-repeat;
 			background-position: center bottom;
+			.content-02__text {
+				position: relative;
+				width: 50%;
+				margin-left: 25%;
+				margin-top: 3.6rem;
+				font-family: 'Nanum Barun Gothic';
+				font-size: 1rem;
+				line-height: 1.8;
+				color: $gray2;
+				text-align: center;
+			}
 			.content-02__design {
 				position: relative;
 				width: 58%;
 				margin-left: 21%;
-				margin-top: 3.6rem;
+				margin-top: 2rem;
 				cursor: pointer;
 				img {
 					position: relative;

@@ -57,6 +57,7 @@ html { font-size: 16px; -webkit-font-smoothing: antialiased; -moz-osx-font-smoot
 .container .contents .content-02 .content-title .content-title__line { background-color: white; }
 .container .contents .content-02 .content-title .content-title__subtitle { color: white; }
 .container .contents .content-02 .content-title .content-title__title { color: white; }
+.container .contents .content-02 .content-02__text { position: relative; width: 50%; margin-left: 25%; margin-top: 3.6rem; font-family: 'Nanum Barun Gothic'; font-size: 1rem; line-height: 1.8; color: #848484; text-align: center; }
 .container .contents .content-02 .content-02__design { position: relative; width: 58%; margin-left: 21%; margin-top: 3.6rem; cursor: pointer; }
 .container .contents .content-02 .content-02__design img { position: relative; width: 100%; z-index: 10; }
 .container .contents .content-02 .content-02__explanation { position: absolute; top: 0; left: 0; right: 0; width: 100%; -webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box; padding: 0 4%; }
