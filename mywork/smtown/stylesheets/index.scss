@@ -1,0 +1,576 @@
+@import '../../../common/stylesheets/base/color.scss';
+@import '../../../common/stylesheets/base/font.scss';
+@import '../../../common/stylesheets/base/mixin.scss';
+@import '../../../common/stylesheets/base/variable.scss';
+@import '../../../common/stylesheets/base/keyframes.scss';
+html {
+	font-size: $desktop;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+	text-rendering: optimizeLegibility;
+	background-color: $bg;
+}
+.container {
+	width: 100%;
+	position: relative;
+	overflow: hidden;
+	.brief {
+		position: relative;
+		width: 92%;
+		height: 25vw;
+		margin-left: 4%;
+		background-repeat: no-repeat;
+		background-size: cover;
+		overflow: hidden;
+		.brief-info {
+			position: absolute;
+			top: 0;
+			left: calc(100% / 12);
+			width: calc((100% / 12) * 7);
+			height: 100%;
+			@include box-sizing(border-box);
+			padding: 1% 0 1% 0;
+			@include flexbox();
+			@include flex-direction(column);
+			@include justify-content(center);
+			.brief-info__category {
+				position: relative;
+				width: 9.5rem;
+				height: 1.5rem;
+				margin-top: 1.5rem;
+				img {
+					position: relative;
+					display: block;
+					width: 100%;
+					height: auto;
+				}
+			}
+			.brief-info__title {
+				position: relative;
+				font-size: 4rem;
+				font-family: 'Teko';
+				font-weight: 500;
+				color: white;
+				line-height: 0.9;
+				letter-spacing: 7px;
+				margin-top: 2rem;
+			}
+			.brief-info__content {
+				position: relative;
+				width: 100%;
+				height: 7rem;
+				background-color: rgba(255, 255, 255, 0.7);
+				@include box-sizing(border-box);
+				padding: 0 2rem 0 2rem;
+				@include flexbox();
+				@include align-items(center);
+				margin-top: 2rem;
+				.info-content__text {
+					width: 14%;
+					margin-left: 2%;
+					display: inline-block;
+					&.purpose {
+					}
+					&.period {
+						width: 32%;
+					}
+					&.skill {
+						width: 50%;
+					}
+					.info-content__text-title {
+						position: relative;
+						width: 100%;
+						font-size: 1rem;
+						font-family: 'Nanum Barun Gothic', sans-serif;
+						font-weight: 300; 
+						color: $gray1;
+					}
+					.info-content__text-body {
+						position: relative;
+						width: 100%;
+						font-size: 1.2rem;
+						font-family: 'Nanum Barun Gothic', sans-serif;
+						color: $gray1;
+						font-weight: 700;
+						margin-top: 0.5rem;
+					}
+				}
+			}
+		}
+	}
+	.contents {
+		position: relative;
+		width: 100%;
+		margin-top: 4rem;
+		.content {
+			.content-title {
+				position: relative;
+				width: 25%;
+				margin-left: 37.5%;
+				.content-title__line {
+					position: relative;
+					width: 9rem;
+					height: 1px;
+					margin-left: calc((100% - 9rem) / 2);
+					display: inline-block;
+					background-color: $gray1;
+					&.bottom {
+						margin-top: -0.3rem;
+					}
+				}
+				.content-title__subtitle {
+					width: 100%;
+					height: 0.5rem;
+					text-align: center;
+					font-family: 'Gotham';
+					font-weight: 300;
+   					font-style: normal;
+					font-size: 1rem;
+					line-height: 1;
+					color: $gray1;
+					margin-top: 0.3rem;
+				}
+				.content-title__title {
+					width: 100%;
+					text-align: center;
+					font-family: 'Teko';
+					font-weight: 500;
+					font-size: 2.85rem;
+					line-height: 1;
+					color: $gray1;
+					letter-spacing: 5px;
+					margin-top: 0.7rem;
+				}
+				&.dark {
+					.content-title__line {
+						background-color: white;
+					}
+					.content-title__subtitle {
+						color: white;
+					}
+					.content-title__title {
+						color: white;
+					}
+				}
+			}
+		}
+		.content-01 {
+			position: relative;
+			width: 100%;
+			margin-top: 10rem;
+			img {
+				position: relative;
+				width: 100%;
+			}
+		}
+		.content-02 {
+			position: relative;
+			width: 100%;
+			@include box-sizing(border-box);
+			padding: 0 4% 8.9vw 4%;
+			background-image: url('../../images/content-02-3.png');
+			background-repeat: no-repeat;
+			background-size: 100%;
+			background-position: center bottom;
+			.content-02__text {
+				position: relative;
+				width: 50%;
+				margin-left: 25%;
+				margin-top: 3.6rem;
+				font-family: 'Nanum Barun Gothic';
+				font-size: 1rem;
+				line-height: 1.8;
+				color: $gray2;
+				text-align: center;
+			}
+			.content-02__design {
+				position: relative;
+				width: 58%;
+				margin-left: 21%;
+				margin-top: 2rem;
+				cursor: pointer;
+				img {
+					position: relative;
+					width: 100%;
+					z-index: 10;
+					&:nth-of-type(2) {
+						@include box-shadow(0 10px 30px rgba(63, 63, 63, 0.3));
+					}
+				}
+			}
+			.content-02__explanation {
+				position: absolute;
+				top: 13%;
+				left: 0;
+				right: 0;
+				width: 100%;
+				@include box-sizing(border-box);
+				padding: 0 4%;
+				.explanation {
+					position: relative;
+					width: calc(100% / 6);
+					@include box-sizing(border-box);
+					margin-left: 5%;
+					&:nth-of-type(2) {
+						margin-top: 21%;
+					}
+					&:nth-of-type(3) {
+						margin-top: 29%;
+					}
+					&:nth-of-type(4) {
+						margin-top: 63%;
+					}
+					&:nth-of-type(5) {
+						margin-top: 24%;
+					}
+					.explanation-num {
+						position: relative;
+						width: 100%;
+						height: 2.25rem;
+						@include flexbox();
+						@include align-items(center);
+						.explanation-num__text {
+							width: 2.25rem;
+							height: 2.25rem;
+							border-radius: 50%;
+							background-color: #292929;
+							color: white;
+							font-family: 'Nanum Barun Gothic';
+							font-size: 1.1rem;
+							font-weight: bold;
+							line-height: 2.25rem;
+							text-align: center;
+						}
+						.explanation-num__line {
+							position: relative;
+							width: calc(100% - 2.25rem);
+							height: 1px;
+							background-color: #292929;
+						}
+					}
+					.explanation-title {
+						margin-top: 3rem;
+						width: 100%;
+						font-family: 'Nanum Barun Gothic';
+						font-size: 1.25rem;
+						font-weight: bold;
+						color: $gray1;
+						text-align: left;
+					}
+					.explanation-text {
+						margin-top: 1.5rem;
+						width: 70%;
+						font-family: 'Nanum Barun Gothic';
+						font-size: 1rem;
+						line-height: 1.75;
+						font-weight: 300;
+						color: $gray1;
+						text-align: left;
+						word-wrap: break-word;
+						word-break: keep-all;
+					}
+					&.right {
+						margin-left: 79%;
+						.explanation-num {
+							.explanation-num__text {
+							}
+							.explanation-num__line {
+							}
+						}
+						.explanation-title {
+							text-align: right;
+						}
+						.explanation-text {
+							text-align: right;
+							margin-left: 30%;
+						}
+					}
+					&.dark {
+						.explanation-num {
+							.explanation-num__text {
+								color: #292929;
+								background-color: white;
+							}
+							.explanation-num__line {
+								background-color: white;
+							}
+						}
+						.explanation-title {
+							color: white;
+						}
+						.explanation-text {
+							color: white;
+						}
+					}
+				}
+			}
+		}
+		.content-03 {
+			position: relative;
+			margin-top: 7%;
+			width: 100%;
+			@include box-sizing(border-box);
+			padding: 0 20%;
+			.content-03__text {
+				position: relative;
+				margin-top: 2rem;
+				width: 38%;
+				margin-left: 31%;
+				font-family: 'Nanum Barun Gothic';
+				font-size: 1rem;
+				color: $gray1;
+				line-height: 1.8;
+				text-align: center;
+				word-break: keep-all;
+				word-wrap: break-word;
+			}
+			.content-03__img {
+				position: relative;
+				width: 80%;
+				margin-left: 10%;
+				margin-top: 5rem;
+				img {
+					position: relative;
+					width: 100%;
+					height: auto;
+				}
+			}
+		}
+		.content-04 {
+			position: relative;
+			width: 100%;
+			background-color: #1c213f;
+			@include box-sizing(border-box);
+			padding: 7vw 4% 4vw 4%;
+			margin-top: 7%;
+			.content-04__text {
+				position: relative;
+				width: 50%;
+				margin-left: 25%;
+				font-family: 'Nanum Barun Gothic';
+				font-size: 1rem;
+				line-height: 1.8;
+				color: white;
+				text-align: center;
+				word-wrap: break-word;
+				word-break: keep-all;
+				margin-top: 3rem;
+			}
+			.content-04__img {
+				position: relative;
+				width: calc((100% / 6) * 5);
+				margin-left: calc(100% / 12);
+				margin-top: 3rem;
+				img {
+					position: relative;
+					width: 100%;
+				}
+			}
+		}
+		.content-05 {
+			position: relative;
+			width: 100%;
+			@include box-sizing(border-box);
+			padding: 7vw 12%;
+			background-image: url('../../images/content-05-3.png');
+			background-color: #1c213f;
+			background-size: 40%;
+			background-repeat: no-repeat;
+			background-position: right bottom;
+			.content-05__img {
+				position: relative;
+				width: 100%;
+				@include flexbox();
+				margin-top: 6rem;
+				.content-05__img-feature {
+					position: relative;
+					display: inline-block;
+					width: 50%;
+					img {
+						position: relative;
+						width: 80%;
+						margin-left: 10%;
+						height: auto;
+						display: block;
+					}
+				}
+				.content-05__img-font {
+					position: relative;
+					display: inline-block;
+					width: 50%;
+					img {
+						position: relative;
+						width: 75%;
+						margin-left: 20%;
+						height: auto;
+						display: block;
+					}
+				}
+			}
+		}
+		.content-06 {
+			position: relative;
+			width: 100%;
+			@include box-sizing(border-box);
+			padding: 7vw 12% 0 12%;
+			.content-06__text {
+				position: relative;
+				width: 50%;
+				margin-left: 25%;
+				font-family: 'Nanum Barun Gothic';
+				font-size: 1rem;
+				line-height: 1.8;
+				color: $gray1;
+				text-align: center;
+				word-wrap: break-word;
+				word-break: keep-all;
+				margin-top: 3rem;
+			}
+			.content-06__img {
+				position: relative;
+				width: 100%;
+				margin-top: 3rem;
+				img {
+					position: relative;
+					width: 100%;
+					height: auto;
+					display: block;
+				}
+			}
+		}
+		.content-07 {
+			position: relative;
+			width: 100%;
+			@include flexbox();
+			@include box-sizing(border-box);
+			padding: 7vw 4% 4vw 4%;
+			background-image: url('../../images/content-07-3.png');
+			background-repeat: no-repeat;
+			background-size: 36%;
+			background-position: right top;
+			background-color: #6a6a6a;
+			.content-07__img {
+				position: relative;
+				width: 50%;
+				margin-left: calc(100% / 12);
+				img {
+					position: relative;
+					width: 100%;
+				}
+			}
+			.content-07__text {
+				position: relative;
+				width: 25%;
+				margin-right: calc(100% / 6);
+				img {
+					position: relative;
+					width: 100%;
+					margin-top: 63%;
+				}
+			}
+		}
+		.content-08 {
+			position: relative;
+			width: 100%;
+			@include box-sizing(border-box);
+			padding: 5vw 0 3vw 0;
+			img {
+				position: relative;
+				width: 20%;
+				margin-left: 40%;
+			}
+		}
+		.showimg {
+			display: none;
+			width: 100%;
+			position: absolute;
+			top: 0;
+			left: 0;
+			right: 0;
+			z-index: 9996;
+			cursor: pointer;
+			img {
+				position: relative;
+				width: 100%;
+				height: auto;
+			}
+		}
+		.banner {
+			position: relative;
+			width: 100%;
+			height: 28vw;
+			margin-top: 4rem;
+			overflow: hidden;
+			display: block;
+			.banner-img {
+				position: relative;
+				width: 100%;
+				height: 100%;
+				overflow: hidden;
+				img {
+					position: relative;
+					width: 100%;
+				}
+			}
+			.banner-text {
+				position: absolute;
+				width: 25%;
+				height: 100%;
+				top: 0;
+				left: 68%;
+				.banner-text__category {
+					position: relative;
+					width: 15rem;
+					height: 1.5rem;
+					margin-top: 7vw;
+					img {
+						position: relative;
+						width: 100%;
+					}
+				}
+				.banner-text__title {
+					position: relative;
+					font-size: 4rem;
+					font-family: 'Teko';
+					font-weight: 500;
+					color: white;
+					line-height: 0.9;
+					letter-spacing: 7px;
+					margin-top: 3rem;
+				}
+				.banner-text__goto {
+					position: relative;
+					width: 65%;
+					height: 2rem;
+					margin-top: 2rem;
+					text-decoration: none;
+					@include flexbox();
+					@include align-items(center);
+					.goto-text {
+						position: relative;
+						font-family: 'Nanum Barun Gothic', sans-serif;
+						font-size: 1.2rem;
+						color: white;
+						margin-right: 2rem;
+					}
+					.goto-arrow {
+						position: relative;
+						width: 2.4rem;
+						height: 1.7rem;
+						float: right;
+						img {
+							position: relative;
+							width: 100%;
+							display: block;
+						}
+					}
+				}
+			}
+		}
+	}
+}
+@media screen and (min-width: 768px) and (max-width: 1600px) {
+	html {
+		font-size: $laptop;
+	}
+}
