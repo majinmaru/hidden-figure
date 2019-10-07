@@ -285,47 +285,6 @@ html {
 				word-wrap: break-word;
 			}
 		}
-		.content-02 {
-			position: relative;
-			width: 100%;
-			margin-top: 7%;
-			@include box-sizing(border-box);
-			padding: 0 12%;
-			.content-02__strategy {
-				position: relative;
-				width: 100%;
-				@include flexbox();
-				margin-top: 4rem;
-				.strategy-img {
-					position: relative;
-					width: 50%;
-					display: inline-block;
-					img {
-						position: relative;
-						width: 80%;
-						margin-left: 10%;
-						height: auto;
-						display: inline-block;
-					}
-				}
-				.strategy-text {
-					position: relative;
-					width: 50%;
-					display: inline-block;
-					@include box-sizing(border-box);
-					padding: 0 5%;
-					font-family: 'Nanum Barun Gothic';
-					font-size: 1rem;
-					line-height: 1.8;
-					color: $gray1;
-					word-wrap: break-word;
-					word-break: keep-all;
-					span {
-						color: #b8ac7c;
-					}
-				}
-			}
-		}
 		.banner {
 			position: relative;
 			width: 100%;

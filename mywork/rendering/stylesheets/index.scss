@@ -66,16 +66,16 @@ html {
 				@include align-items(center);
 				margin-top: 2rem;
 				.info-content__text {
-					width: 14%;
+					width: 22%;
 					margin-left: 2%;
 					display: inline-block;
 					&.purpose {
 					}
 					&.period {
-						width: 32%;
+						width: 28%;
 					}
 					&.skill {
-						width: 50%;
+						width: 46%;
 					}
 					.info-content__text-title {
 						position: relative;
