@@ -343,6 +343,7 @@ html {
 			@include box-sizing(border-box);
 			padding: 5vw 4% 0 4%;
 			background-color: #04080b;
+			overflow: hidden;
 			.content-04__video {
 				position: relative;
 				width: 100%;
@@ -386,6 +387,7 @@ html {
 					position: relative;
 					width: 50%;
 					display: inline-block;
+					overflow: hidden;
 					img {
 						position: relative;
 						width: 90%;
