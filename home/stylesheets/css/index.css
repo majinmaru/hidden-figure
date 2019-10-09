@@ -6,9 +6,9 @@
 @font-face { font-family: 'Gotham'; src: url("https://majinmaru.github.io/hidden-figure/common/font/Gotham-Book.eot"); src: url("https://majinmaru.github.io/hidden-figure/common/font/Gotham-Book.eot?#iefix") format("embedded-opentype"), url("https://majinmaru.github.io/hidden-figure/common/font/Gotham-Book.woff2") format("woff2"), url("https://majinmaru.github.io/hidden-figure/common/font/Gotham-Book.woff") format("woff"), url("https://majinmaru.github.io/hidden-figure/common/font/Gotham-Book.ttf") format("truetype"), url("https://majinmaru.github.io/hidden-figure/common/font/Gotham-Book.svg#Gotham-Book") format("svg"); font-weight: normal; font-style: normal; }
 html { font-size: 16px; -webkit-font-smoothing: antialiased; -moz-osx-font-smoothing: grayscale; text-rendering: optimizeLegibility; background-color: #f3f3f3; }
 
-.container { width: 100%; height: calc(100vh - 16.75rem); padding: 0 4% 0 4%; position: relative; -webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box; overflow: hidden; }
-.container img { width: 100%; display: block; }
+.container { width: 92%; height: calc(100vh - 16.75rem); display: block; margin-left: 4%; position: relative; background-image: url("../../images/main.png"); background-repeat: no-repeat; background-size: cover; }
 
-@media screen and (min-width: 768px) and (max-width: 1600px) { html { font-size: 15px; } }
+@media screen and (min-width: 1441px) and (max-width: 1600px) { html { font-size: 15px; } }
+@media screen and (min-width: 1024px) and (max-width: 1440px) { html { font-size: 14px; } }
 
 /*# sourceMappingURL=index.css.map */

@@ -569,8 +569,24 @@ html {
 		}
 	}
 }
-@media screen and (min-width: 768px) and (max-width: 1600px) {
+@media screen and (min-width: 1441px) and (max-width: 1600px) {
 	html {
 		font-size: $laptop;
+	}
+}
+@media screen and (min-width: 1024px) and (max-width: 1440px) {
+	html {
+		font-size: $laptop-s;
+	}
+	.container {
+		.contents {
+			.content-02 {
+				.content-02__explanation {
+					&:nth-of-type(5) {
+						margin-top: 12%;
+					}
+				}
+			}
+		}
 	}
 }

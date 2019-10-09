@@ -113,7 +113,7 @@ html {
 	}
 	.btn-wrapper {
 		position: absolute;
-		top: 60vh;
+		top: 30vw;
 		left: 0;
 		right: 0;
 		width: 100%;
@@ -856,7 +856,7 @@ html {
 		}
 	}
 }
-@media screen and (min-width: 768px) and (max-width: 1600px) {
+@media screen and (min-width: 1441px) and (max-width: 1600px) {
 	html {
 		font-size: $laptop;
 	}
@@ -864,12 +864,26 @@ html {
 		.contents {
 			.content-05 {
 				.content-05__filter {
-					padding: 4.7vw 4% 6vw 4%;
+					padding: 4.4vw 4% 6vw 4%;
 				}
 			}
 			.content-10 {
 				.content-10__pages {
 					margin-top: -24.2vw;
+				}
+			}
+		}
+	}
+}
+@media screen and (min-width: 1024px) and (max-width: 1440px) {
+	html {
+		font-size: $laptop-s;
+	}
+	.container {
+		.contents {
+			.content-05 {
+				.content-05__filter {
+					padding: 4.1vw 4% 6vw 4%;
 				}
 			}
 		}

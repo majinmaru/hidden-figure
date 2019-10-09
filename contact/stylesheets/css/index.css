@@ -7,7 +7,7 @@
 html { font-size: 16px; -webkit-font-smoothing: antialiased; -moz-osx-font-smoothing: grayscale; text-rendering: optimizeLegibility; background-color: #f3f3f3; }
 
 .container { position: relative; width: 100%; height: calc(100vh - 16.75rem); padding: 0 4% 0 4%; -webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box; overflow: hidden; }
-.container .contact-img { position: relative; width: 50%; height: 100%; display: inline-block; overflow: hidden; }
+.container .contact-img { position: relative; width: 50%; height: 100%; display: inline-block; overflow: hidden; background-image: url("../../images/contact-img.png"); background-repeat: no-repeat; background-size: cover; background-position: top center; }
 .container .contact-img img { position: relative; width: 100%; height: auto; display: block; }
 .container .contact-text { position: absolute; top: 0; right: calc(100% / 12); width: 50%; height: 100%; display: inline-block; }
 .container .contact-text .text-main { position: relative; width: 100%; height: 7rem; margin-top: 13%; margin-left: 0.6rem; }

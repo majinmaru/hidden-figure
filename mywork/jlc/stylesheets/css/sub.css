@@ -30,18 +30,14 @@ html { font-size: 16px; -webkit-font-smoothing: antialiased; -moz-osx-font-smoot
 .container .btn-wrapper.sticky .btn-tab a p { color: white; }
 .container .btn-wrapper .btn-tab { width: 15%; height: 100%; margin-left: 2%; }
 .container .btn-wrapper .btn-tab:nth-of-type(1) { margin-left: 25.5%; }
-.container .btn-wrapper .btn-tab.current a { background-color: #04080b; border: 1px solid #04080b; }
+.container .btn-wrapper .btn-tab.current a { background-color: #212528; border: 1px solid #212528; }
 .container .btn-wrapper .btn-tab.current a p { color: white; font-weight: 400; }
-.container .btn-wrapper .btn-tab a { width: 100%; height: 100%; background-color: transparent; border: 1px solid #04080b; text-decoration: none; text-align: center; display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-align: center; -ms-flex-align: center; align-items: center; }
-.container .btn-wrapper .btn-tab a:hover { background-color: #04080b; border: 1px solid #04080b; }
+.container .btn-wrapper .btn-tab a { width: 100%; height: 100%; background-color: transparent; border: 1px solid #212528; text-decoration: none; text-align: center; display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-align: center; -ms-flex-align: center; align-items: center; }
+.container .btn-wrapper .btn-tab a:hover { background-color: #212528; border: 1px solid #212528; }
 .container .btn-wrapper .btn-tab a:hover p { color: white; font-weight: 400; }
 .container .btn-wrapper .btn-tab a p { width: 100%; text-decoration: none; color: #575757; font-family: 'Nanum Barun Gothic', sans-serif; font-weight: 300; font-size: 1rem; }
 .container .contents { position: relative; width: 100%; margin-top: 13vw; }
 .container .contents .content .content-title { position: relative; width: 25%; margin-left: 37.5%; }
-.container .contents .content .content-title.right { width: calc(100% / 6); margin-left: calc((100% / 6) * 5); }
-.container .contents .content .content-title.right .content-title__line { background-color: #575757; }
-.container .contents .content .content-title.right .content-title__subtitle { color: #575757; }
-.container .contents .content .content-title.right .content-title__title { color: #575757; }
 .container .contents .content .content-title.left { width: calc(100% / 6); margin-left: calc(100% / 12); }
 .container .contents .content .content-title.left .content-title__line { background-color: white; }
 .container .contents .content .content-title.left .content-title__subtitle { color: white; }
@@ -50,53 +46,10 @@ html { font-size: 16px; -webkit-font-smoothing: antialiased; -moz-osx-font-smoot
 .container .contents .content .content-title .content-title__line.bottom { margin-top: -0.3rem; }
 .container .contents .content .content-title .content-title__subtitle { width: 100%; height: 0.7rem; text-align: center; font-family: 'Gotham'; font-weight: 300; font-style: normal; font-size: 1rem; line-height: 1; color: #575757; margin-top: 0.3rem; }
 .container .contents .content .content-title .content-title__title { width: 100%; text-align: center; font-family: 'Teko'; font-weight: 500; font-size: 2.85rem; line-height: 1; color: #575757; letter-spacing: 5px; margin-top: 0.5rem; }
-.container .contents .content-01 { position: relative; width: 100%; -webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box; padding: 0 4%; }
-.container .contents .content-01 .content-01__logo { position: relative; width: 9.5rem; margin-left: calc((100% - 9.5rem) / 2); }
-.container .contents .content-01 .content-01__logo img { position: relative; width: 100%; height: auto; display: block; }
-.container .contents .content-01 .content-01__body { position: relative; width: 100%; height: 32vw; display: -webkit-box; display: -ms-flexbox; display: flex; }
-.container .contents .content-01 .content-01__body .content-01__body-text { width: 50%; height: 100%; display: inline-block; -webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box; padding: 0 9%; display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-align: center; -ms-flex-align: center; align-items: center; }
-.container .contents .content-01 .content-01__body .content-01__body-text p { width: 100%; font-family: 'Nanum Barun Gothic'; color: #575757; font-size: 1rem; line-height: 1.75; word-wrap: break-word; word-break: keep-all; }
-.container .contents .content-01 .content-01__body .content-01__body-text p span { font-weight: 700; }
-.container .contents .content-01 .content-01__body .content-01__body-img { position: relative; width: 50%; height: 100%; display: inline-block; overflow: hidden; }
-.container .contents .content-01 .content-01__body .content-01__body-img img { position: relative; width: 90%; height: auto; }
-.container .contents .content-02 { position: relative; width: 100%; -webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box; padding: 9rem 4%; background-color: #04080b; display: -webkit-box; display: -ms-flexbox; display: flex; }
-.container .contents .content-02 .content-02__left { position: relative; display: inline-block; width: 25%; margin-left: calc(100% / 12); }
-.container .contents .content-02 .content-02__left .left-title { width: 100%; }
-.container .contents .content-02 .content-02__left .left-title .left-title__line { position: relative; width: 11rem; height: 1px; background-color: white; display: inline-block; }
-.container .contents .content-02 .content-02__left .left-title .left-title__line.bottom { margin-top: -0.3rem; }
-.container .contents .content-02 .content-02__left .left-title .left-title__subtitle { width: 100%; height: 0.7rem; font-family: 'Gotham'; font-weight: 300; font-style: normal; font-size: 1rem; line-height: 1; color: white; margin-top: 0.3rem; }
-.container .contents .content-02 .content-02__left .left-title .left-title__title { width: 100%; font-family: 'Teko'; font-weight: 500; font-size: 2.85rem; line-height: 1; color: white; letter-spacing: 5px; margin-top: 0.5rem; }
-.container .contents .content-02 .content-02__left .left-text { position: relative; margin-top: 4rem; width: 90%; font-family: 'Nanum Barun Gothic'; font-weight: 300; font-size: 1rem; line-height: 1.75; color: white; word-break: keep-all; word-wrap: break-word; }
-.container .contents .content-02 .content-02__left .left-text span { color: #ff73a1; font-weight: bold; }
-.container .contents .content-02 .content-02__right { position: relative; display: inline-block; width: 50%; margin-left: calc(100% / 12); margin-right: calc(100% / 12); }
-.container .contents .content-02 .content-02__right img { position: relative; width: 100%; height: auto; display: block; margin-top: 1rem; }
-.container .contents .content-03 { position: relative; width: 100%; -webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box; padding: 9rem 4%; }
-.container .contents .content-03 .content-03__flow { position: relative; width: 90%; margin-left: 5%; }
-.container .contents .content-03 .content-03__flow img { position: relative; width: 100%; height: auto; display: block; }
-.container .contents .content-04 { position: relative; width: 100%; -webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box; padding: 9rem 4% 0 4%; background-color: #04080b; overflow: hidden; }
-.container .contents .content-04 .content-title .content-title__line { background-color: white; }
-.container .contents .content-04 .content-title .content-title__subtitle { color: white; }
-.container .contents .content-04 .content-title .content-title__title { color: white; }
-.container .contents .content-04 .content-04__concept { width: calc((100% / 6) * 5); margin-left: calc(100% / 12); margin-top: -16.5rem; }
-.container .contents .content-04 .content-04__concept img { position: relative; width: 100%; height: auto; display: block; }
-.container .contents .content-05 { position: relative; width: 100%; -webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box; padding: 10rem 4% 0 4%; }
-.container .contents .content-05 .content-05__color { position: relative; width: 100%; margin-top: 5rem; display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box; padding-left: calc(100% / 6); padding-right: calc(100% / 6); -webkit-box-align: center; -ms-flex-align: center; align-items: center; }
-.container .contents .content-05 .content-05__color .color-text { position: relative; width: 50%; display: inline-block; font-size: 1rem; line-height: 1.75; color: #575757; font-family: 'Nanum Barun Gothic'; -webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box; padding-right: 8%; word-wrap: break-word; word-break: keep-all; }
-.container .contents .content-05 .content-05__color .color-img { position: relative; width: 50%; display: inline-block; }
-.container .contents .content-05 .content-05__color .color-img img { position: relative; width: 100%; height: auto; display: block; }
-.container .contents .content-06 { position: relative; width: 100%; -webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box; padding: 10rem 4%; }
-.container .contents .content-06 .content-06__typo { position: relative; width: calc((100% / 6) * 5); margin-left: calc(100% / 12); margin-top: 4rem; }
-.container .contents .content-06 .content-06__typo .typo-img { position: relative; width: 75%; height: auto; display: block; margin-left: 10%; margin-top: 4rem; }
-.container .contents .content-06 .content-06__typo .typo-img.second { margin-left: 18.5%; }
-.container .contents .content-07 { position: relative; width: 100%; -webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box; padding: 8rem 4%; background-color: #04080b; }
-.container .contents .content-07 .content-title .content-title__line { background-color: white; }
-.container .contents .content-07 .content-title .content-title__subtitle { color: white; }
-.container .contents .content-07 .content-title .content-title__title { color: white; }
-.container .contents .content-07 .content-07__guide { position: relative; width: 80%; margin-left: 10%; margin-top: 5rem; }
-.container .contents .content-07 .content-07__guide img { position: relative; width: 90%; height: auto; margin-left: 6%; }
-.container .contents .content-08 { position: relative; width: 100%; -webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box; padding: 8rem 4% 6rem 4%; }
-.container .contents .content-08 .content-08__icon { position: relative; width: 68%; margin-left: 16%; margin-top: 5rem; }
-.container .contents .content-08 .content-08__icon img { position: relative; width: 90%; height: auto; margin-left: 5%; }
+.container .contents .content-01 { position: relative; width: 100%; -webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box; padding: 7% 4%; background-image: url("../../images/content-01-1.png"); background-size: cover; background-repeat: no-repeat; background-position: center top; }
+.container .contents .content-01 .content-01__img { position: relative; width: calc(100% / 6); margin-left: calc((100%/ 12) * 5); }
+.container .contents .content-01 .content-01__img img { position: relative; width: 100%; height: auto; }
+.container .contents .content-01 .content-01__text { position: relative; width: 50%; margin-left: 25%; margin-top: 5rem; font-family: 'Nanum Barun Gothic'; font-size: 1rem; line-height: 1.8; color: white; text-align: center; word-break: keep-all; word-wrap: break-word; }
 .container .contents .banner { position: relative; width: 100%; height: 28vw; margin-top: 4rem; overflow: hidden; display: block; }
 .container .contents .banner .banner-img { position: relative; width: 100%; height: 100%; overflow: hidden; }
 .container .contents .banner .banner-img img { position: relative; width: 100%; }
@@ -112,4 +65,4 @@ html { font-size: 16px; -webkit-font-smoothing: antialiased; -moz-osx-font-smoot
 @media screen and (min-width: 1441px) and (max-width: 1600px) { html { font-size: 15px; } }
 @media screen and (min-width: 1024px) and (max-width: 1440px) { html { font-size: 14px; } }
 
-/*# sourceMappingURL=index.css.map */
+/*# sourceMappingURL=sub.css.map */

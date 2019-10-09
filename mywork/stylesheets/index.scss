@@ -127,6 +127,9 @@ html {
 							@include flexbox();
 							@include align-items(center);
 							background-size: cover;
+							&:focus {
+								outline: none;
+							}
 							img {
 								position: relative;
 								width: auto;
@@ -157,6 +160,10 @@ html {
 							left: calc((100% / 3) * 2);
 							letter-spacing: 5px;
 							@include transform(translateY(-50%));
+							text-decoration: none;
+							&:focus {
+								outline: none;
+							}
 						}
 						.card-number {
 							width: calc(100% / 6);
@@ -180,6 +187,9 @@ html {
 						display: none;
 						text-align: center;
 						bottom: 10%;
+						&:focus {
+							outline: none; 
+						}
 						.card-detail__text {
 							position: relative;
 							font-family: 'Gotham';
@@ -189,6 +199,9 @@ html {
 							font-size: 1rem;
 							cursor: pointer;
 							text-decoration: none;
+							&:focus {
+								outline: none; 
+							}
 						}
 						.card-detail__line {
 							width: 0;
@@ -231,8 +244,13 @@ html {
 		}
 	}
 }
-@media screen and (min-width: 768px) and (max-width: 1600px) {
+@media screen and (min-width: 1441px) and (max-width: 1600px) {
 	html {
 		font-size: $laptop;
+	}
+}
+@media screen and (min-width: 1024px) and (max-width: 1440px) {
+	html {
+		font-size: $laptop-s;
 	}
 }

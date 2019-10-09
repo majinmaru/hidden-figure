@@ -113,7 +113,7 @@ html {
 	}
 	.btn-wrapper {
 		position: absolute;
-		top: 60vh;
+		top: 30vw;
 		left: 0;
 		right: 0;
 		width: 100%;
@@ -203,8 +203,8 @@ html {
 		.content {
 			.content-title {
 				position: relative;
-				width: 25%;
-				margin-left: 37.5%;
+				width: 50%;
+				margin-left: 25%;
 				&.left {
 					width: calc(100% / 6);
 					margin-left: calc(100% / 12);
@@ -355,7 +355,7 @@ html {
 					@include box-sizing(border-box);
 					margin-left: 5%;
 					&:nth-of-type(1) {
-						margin-top: 24%;
+						margin-top: 29%;
 					}
 					&:nth-of-type(2) {
 						margin-top: -3%;
@@ -745,7 +745,7 @@ html {
 	}
 }
 
-@media screen and (min-width: 768px) and (max-width: 1600px) {
+@media screen and (min-width: 1441px) and (max-width: 1600px) {
 	html {
 		font-size: $laptop;
 	}
@@ -754,14 +754,11 @@ html {
 			.content-02 {
 				.content-02__explanation {
 					.explanation {
-						&:nth-of-type(1) {
-							margin-top: 24%;
-						}
 						&:nth-of-type(2) {
 							margin-top: -3%;
 						}
 						&:nth-of-type(3) {
-							margin-top: 4%;
+							margin-top: 0;
 						}
 						&:nth-of-type(4) {
 							margin-top: 20%;
@@ -770,13 +767,40 @@ html {
 							margin-top: 13%;
 						}
 						&:nth-of-type(6) {
-							margin-top: 10%;
+							margin-top: 13%;
 						}
 						&:nth-of-type(7) {
-							margin-top: 8%;
+							margin-top: 10%;
 						}
 						&:nth-of-type(8) {
 							margin-top: 2%;
+						}
+					}
+				}
+			}
+		}
+	}
+}
+@media screen and (min-width: 1024px) and (max-width: 1440px) {
+	html {
+		font-size: $laptop-s;
+	}
+	.container {
+		.contents {
+			.content-02 {
+				.content-02__explanation {
+					.explanation {
+						&:nth-of-type(3) {
+							margin-top: 0;
+						}
+						&:nth-of-type(6) {
+							margin-top: 7%;
+						}
+						&:nth-of-type(7) {
+							margin-top: 10%;
+						}
+						&:nth-of-type(8) {
+							margin-top: 0;
 						}
 					}
 				}

@@ -11,19 +11,22 @@ html {
 	background-color: $bg;
 }
 .container {
-	width: 100%;
+	width: 92%;
 	height: calc(100vh - 16.75rem);
-	padding: 0 4% 0 4%;
+	display: block;
+	margin-left: 4%;
 	position: relative;
-	@include box-sizing(border-box);
-	overflow: hidden;
-	img {
-		width: 100%;
-		display: block;
-	}
+	background-image: url('../../images/main.png');
+	background-repeat: no-repeat;
+	background-size: cover;
 }
-@media screen and (min-width: 768px) and (max-width: 1600px) {
+@media screen and (min-width: 1441px) and (max-width: 1600px) {
 	html {
 		font-size: $laptop;
+	}
+}
+@media screen and (min-width: 1024px) and (max-width: 1440px) {
+	html {
+		font-size: $laptop-s;
 	}
 }
