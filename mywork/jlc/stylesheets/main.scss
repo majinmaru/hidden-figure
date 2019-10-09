@@ -136,12 +136,14 @@ html {
 				&.current {
 					a {
 						border: none;
+						background-color: #d5c791;
 					}
 				}
 				a {
 					border: none;
 					&:hover {
 						border: none;
+						background-color: #d5c791;
 					}
 					p {
 						color: white;
@@ -256,40 +258,170 @@ html {
 			position: relative;
 			width: 100%;
 			@include box-sizing(border-box);
-			padding: 7% 4%;
-			background-image: url('../../images/content-01-1.png');
+			padding: 7% 20%;
+			background-image: url('../../images/m-content-01.png');
 			background-size: cover;
 			background-repeat: no-repeat;
 			background-position: center top;
-			.content-01__img {
+			.content-01__video {
 				position: relative;
-				width: calc(100% / 6);
-				margin-left: calc((100%/ 12) * 5);
-				img {
+				width: 100%;
+				height: auto;
+				z-index: 5;
+				@include box-shadow(0 5px 20px rgba(61, 61, 61, 0.3));
+			}
+		}
+		.content-02 {
+			position: relative;
+			width: 100%;
+			margin-top: 7%;
+			.content-02__layout {
+				position: relative;
+				width: 100%;
+				@include box-sizing(border-box);
+				padding: 0 4%;
+				margin-top: 3rem;
+				@include flexbox();
+				.layout-exp {
 					position: relative;
-					width: 100%;
-					height: auto;
+					width: calc(100% / 3);
+					display: inline-block;
+					.exp {
+						position: relative;
+						width: 100%;
+						@include box-sizing(border-box);
+						padding-left: 25%;
+						&:nth-of-type(1) {
+							margin-top: 6%;
+						}
+						&:nth-of-type(2) {
+							margin-top: 10%;
+						}
+						&:nth-of-type(3) {
+							margin-top: 67%;
+						}
+						&:nth-of-type(4) {
+							margin-top: 353%;
+						}
+						&:nth-of-type(5) {
+							margin-top: 30%;
+						}
+						.exp-num {
+							position: relative;
+							width: 100%;
+							height: 2.25rem;
+							@include flexbox();
+							@include align-items(center);
+							.exp-num__text {
+								width: 2.25rem;
+								height: 2.25rem;
+								border-radius: 50%;
+								background-color: #d5c791;
+								color: white;
+								font-family: 'Nanum Barun Gothic';
+								font-size: 1.1rem;
+								font-weight: bold;
+								line-height: 2.25rem;
+								text-align: center;
+							}
+							.exp-num__line {
+								position: relative;
+								width: calc(100% - 2.25rem);
+								height: 1px;
+								background-color: #d5c791;
+							}
+						}
+						.exp-title {
+							margin-top: 3rem;
+							width: 100%;
+							font-family: 'Nanum Barun Gothic';
+							font-size: 1.25rem;
+							font-weight: bold;
+							color: $gray1;
+							text-align: left;
+						}
+						.exp-text {
+							margin-top: 1.5rem;
+							width: 70%;
+							font-family: 'Nanum Barun Gothic';
+							font-size: 1rem;
+							line-height: 1.75;
+							font-weight: 300;
+							color: $gray1;
+							text-align: left;
+							word-wrap: break-word;
+							word-break: keep-all;
+						}
+						.exp-img {
+							position: relative;
+							width: 70%;
+							margin-top: 2rem;
+							img {
+								position: relative;
+								width: 100%;
+								height: auto;
+								display: block;
+							}
+						}
+					}
+				}
+				.layout-img {
+					position: relative;
+					width: calc((100% / 3) * 2);
+					display: inline-block;
+					.layout-img__whole {
+						position: relative;
+						width: calc(100% - 1.2rem);
+						margin-left: 0.6rem;
+						border-top-right-radius: 1rem;
+						border-top-left-radius: 1rem;
+						overflow: hidden;
+						@include box-shadow(0 5px 20px rgba(61, 61, 61, 0.3));
+						img {
+							position: relative;
+							width: 100%;
+							height: auto;
+							display: block;
+						}
+					}
+					.layout-img__slide {
+						position: absolute;
+						top: 0;
+						left: 0;
+						right: 0;
+						width: 100%;
+						@include box-sizing(border-box);
+						padding: 0.6rem;
+						border-radius: 1rem;
+						background-color: #212528;
+						overflow: hidden;
+						z-index: 5;
+						.lauout-img__slide-video {
+							position: relative;
+							width: 100%;
+							height: auto;
+						}
+					}
 				}
 			}
-			.content-01__text {
+		}
+		.content-03 {
+			position: relative;
+			width: 100%;
+			height: 38vw;
+			margin-top: 9%;
+			overflow: hidden;
+			.content-03__video {
 				position: relative;
-				width: 50%;
-				margin-left: 25%;
-				margin-top: 5rem;
-				font-family: 'Nanum Barun Gothic';
-				font-size: 1rem;
-				line-height: 1.8;
-				color: white;
-				text-align: center;
-				word-break: keep-all;
-				word-wrap: break-word;
+				width: 100%;
+				height: auto;
+				@include transform(translateY(-12%));
 			}
 		}
 		.banner {
 			position: relative;
 			width: 100%;
 			height: 28vw;
-			margin-top: 4rem;
 			overflow: hidden;
 			display: block;
 			.banner-img {

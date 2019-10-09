@@ -136,12 +136,14 @@ html {
 				&.current {
 					a {
 						border: none;
+						background-color: #d5c791;
 					}
 				}
 				a {
 					border: none;
 					&:hover {
 						border: none;
+						background-color: #d5c791;
 					}
 					p {
 						color: white;
@@ -206,6 +208,17 @@ html {
 				&.left {
 					width: calc(100% / 6);
 					margin-left: calc(100% / 12);
+					.content-title__line {
+						background-color: white;
+					}
+					.content-title__subtitle {
+						color: white;
+					}
+					.content-title__title {
+						color: white;
+					}
+				}
+				&.dark {
 					.content-title__line {
 						background-color: white;
 					}
@@ -323,6 +336,116 @@ html {
 					span {
 						color: #b8ac7c;
 					}
+				}
+			}
+		}
+		.content-03 {
+			position: relative;
+			width: 100%;
+			@include box-sizing(border-box);
+			padding: 7% 0;
+			margin-top: 7%;
+			background-image: url('../../images/content-03-1.png');
+			background-repeat: repeat-y;
+			background-size: contain;
+			.content-03__img {
+				position: relative;
+				width: 100%;
+				img {
+					position: relative;
+					width: 100%;
+					height: auto;
+					display: block;
+					margin-top: 3rem;
+					&:nth-of-type(2) {
+						margin-top: 7rem;
+					}
+				}
+			}
+		}
+		.content-04{
+			position: relative;
+			width: 100%;
+			@include box-sizing(border-box);
+			padding: 0 12%;
+			margin-top: 7%;
+			.content-04__img {
+				position: relative;
+				width: 100%;
+				margin-top: 3rem;
+				img {
+					position: relative;
+					width: 100%;
+					height: auto;
+					display: block;
+				}
+			}
+		}
+		.content-05 {
+			position: relative;
+			width: 100%;
+			@include box-sizing(border-box);
+			padding: 7% 20%;
+			margin-top: 7%;
+			background-color: #45484a;
+			.content-05__img {
+				position: relative;
+				width: 90%;
+				margin-left: 5%;
+				margin-top: 3rem;
+				img {
+					position: relative;
+					width: 100%;
+					height: auto;
+					display: block;
+				}
+			}
+		}
+		.content-06 {
+			position: relative;
+			width: 100%;
+			@include box-sizing(border-box);
+			padding: 3% 20% 7% 20%;
+			background-color: #45484a;
+			.content-06__img {
+				position: relative;
+				width: 100%;
+				margin-top: 3rem;
+				img {
+					position: relative;
+					width: 100%;
+					height: auto;
+					display: block;
+				}
+			}
+		}
+		.content-07 {
+			position: relative;
+			width: 100%;
+			@include box-sizing(border-box);
+			padding: 7% 20%;
+			.content-07__text {
+				position: relative;
+				width: 50%;
+				margin-left: 25%;
+				font-family: 'Nanum Barun Gothic';
+				font-size: 1rem;
+				line-height: 1.8;
+				color: $gray1;
+				text-align: center;
+				word-wrap: break-word;
+				word-break: keep-all;
+				margin-top: 3rem;
+			}
+			.content-07__img {
+				position: relative;
+				width: 100%;
+				margin-top: 2rem;
+				img {
+					position: relative;
+					width: 100%;
+					height: auto;
+					display: block;
 				}
 			}
 		}
