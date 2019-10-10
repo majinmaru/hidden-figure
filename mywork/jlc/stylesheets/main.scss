@@ -205,19 +205,6 @@ html {
 				position: relative;
 				width: 25%;
 				margin-left: 37.5%;
-				&.left {
-					width: calc(100% / 6);
-					margin-left: calc(100% / 12);
-					.content-title__line {
-						background-color: white;
-					}
-					.content-title__subtitle {
-						color: white;
-					}
-					.content-title__title {
-						color: white;
-					}
-				}
 				.content-title__line {
 					position: relative;
 					width: 11rem;

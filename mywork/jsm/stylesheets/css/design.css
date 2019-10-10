@@ -54,7 +54,7 @@ html { font-size: 16px; -webkit-font-smoothing: antialiased; -moz-osx-font-smoot
 .container .contents .content .content-title .content-title__subtitle { width: 100%; height: 0.5rem; text-align: center; font-family: 'Gotham'; font-weight: 300; font-style: normal; font-size: 1rem; line-height: 1; color: #575757; margin-top: 0.3rem; }
 .container .contents .content .content-title .content-title__title { width: 100%; text-align: center; font-family: 'Teko'; font-weight: 500; font-size: 2.85rem; line-height: 1; color: #575757; letter-spacing: 5px; margin-top: 0.7rem; }
 .container .contents .content-01 { position: relative; width: 100%; -webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box; padding: 0 12%; }
-.container .contents .content-01 .content-01__video { position: relative; width: 100%; height: auto; z-index: 5; }
+.container .contents .content-01 .content-01__video { position: relative; width: 100%; height: auto; z-index: 5; -webkit-box-shadow: 0 5px 20px rgba(61, 61, 61, 0.3); -moz-box-shadow: 0 5px 20px rgba(61, 61, 61, 0.3); box-shadow: 0 5px 20px rgba(61, 61, 61, 0.3); }
 .container .contents .content-02 { position: relative; width: 100%; -webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box; padding: 13vw 12% 0 12%; background-color: #04080b; margin-top: -13.5vw; }
 .container .contents .content-02 img { position: relative; width: 100%; }
 .container .contents .content-03 { position: relative; width: 100%; height: 54vw; -webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box; padding-top: 7vw; }
