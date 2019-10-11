@@ -4,8 +4,321 @@
 @import '../../common/stylesheets/base/variable.scss';
 @import '../../common/stylesheets/base/keyframes.scss';
 html {
-	//font-size: $desktop;
+	font-size: $desktop;
 	-webkit-font-smoothing: antialiased;
 	-moz-osx-font-smoothing: grayscale;
 	text-rendering: optimizeLegibility;
+	background-color: $bg;
+}
+.container {
+	width: 100%;
+	position: relative;
+	@include box-sizing(border-box);
+	padding: 0 4%;
+	.introduce {
+		position: relative;
+		width: 100%;
+		height: 33.5vw;
+		overflow: hidden;
+		.introduce-bg {
+			position: relative;
+			width: 100%;
+			height: 100%;
+			img {
+				position: relative;
+				width: 100%;
+				height: auto;
+				display: block;
+			}
+		}
+		.introduce-img {
+			position: absolute;
+			width: 100%;
+			@include box-sizing(border-box);
+			top: 0;
+			left: 0;
+			right: 0;
+			padding: 0 33%;
+			overflow: hidden;
+			img {
+				position: relative;
+				width: 100%;
+				height: auto;
+			}
+		}
+		.introduce-text {
+			position: absolute;
+			width: 100%;
+			@include box-sizing(border-box);
+			top: 72%;
+			left: 0;
+			right: 0;
+			padding: 0 25%;
+			img {
+				position: relative;
+				width: 100%;
+				height: auto;
+			}
+		}
+	}
+	.contents {
+		position: relative;
+		width: 100%;
+		margin-top: 5%;
+		.content {
+			position: relative;
+			width: 100%;
+			.content-category {
+				position: relative;
+				width: calc((100% / 12) * 11);
+				height: 1.875rem;
+				@include flexbox();
+				margin-left: calc(100% / 12);
+				&.right {}
+				.category-dots {
+					position: relative;
+					width: 4px;
+					height: 100%;
+					margin-right: 0.5rem;
+					div {
+						position: relative;
+						width: 4px;
+						height: 4px;
+						background-color: #67dca3;
+						&:nth-of-type(1) {
+							margin-top: 5px;
+						}
+						&:nth-of-type(2) {
+							margin-top: 8px;
+						}
+					}
+				}
+				.category-text {
+					font-family: 'Teko';
+					font-size: 1.875rem;
+					line-height: 1;
+					color: #67dca3;
+				}
+			}
+			.content-title {
+				position: relative;
+				width: calc((100% / 12) * 11);
+				margin-top: 2rem;
+				margin-left: calc(100% / 12);
+				&.right {
+					margin-left: 0;
+					margin-right: calc(100% / 12);
+					.content-title__block {
+						&.second {
+							&:after {
+								display: none;
+							}
+							&:before {
+								content: url('../../images/quatation-start.png');
+								position: relative;
+								width: 3.375rem;
+								height: 2.625rem;
+								display: inline-block;
+								vertical-align: top;
+							}
+						}
+						.block-text {
+							text-align: right;
+						}
+					}
+				}
+				.content-title__block {
+					position: relative;
+					width: 100%;
+					height: 3.75rem;
+					margin-top: 0.7rem;
+					overflow: hidden;
+					&.second {
+						&:after {
+							content: url('../../images/quatation-end.png');
+							position: relative;
+							width: 3.375rem;
+							height: 2.625rem;
+							display: inline-block;
+							vertical-align: top;
+						}
+					}
+					.block-text {
+						position: relative;
+						font-family: 'Nanum Barun Gothic';
+						font-size: 3rem;
+						font-weight: 200;
+						color: white;
+						line-height: 3.75rem;
+						letter-spacing: 5px;
+						background-color: #67dca3;
+						.block-text__strong {
+							font-weight: bold;
+						}
+					}
+				}
+			}
+			.content-text {
+				position: relative;
+				width: 50%;
+				margin-left: calc(100% / 12);
+				font-family: 'Nanum Barun Gothic';
+				font-size: 1rem;
+				color: $gray1;
+				line-height: 1.8;
+				word-wrap: break-word;
+				word-break: keep-all;
+				margin-top: 4rem;
+				span {
+					font-weight: bold;
+				}
+			}
+		}
+		.content-01 {
+			position: relative;
+			width: 100%;
+		}
+		.content-02 {
+			position: relative;
+			width: 100%;
+			margin-top: 7%;
+			text-align: right;
+			.content-category {
+				width: 6.5rem;
+				margin-left: calc(92% - 6.5rem);
+			}
+			.content-02__img {
+				position: relative;
+				width: 60.6%;
+				margin-left: 31.4%;
+				margin-top: 5rem;
+				img {
+					position: relative;
+					width: 100%;
+					height: auto;
+					display: block;
+				}
+			}
+		}
+		.content-03 {
+			position: relative;
+			width: 100%;
+			margin-top: 7%;
+		}
+		.content-04 {
+			position: relative;
+			width: 100%;
+			margin-top: 7%;
+			text-align: right;
+			.content-category {
+				width: 8.7rem;
+				margin-left: calc(92% - 8.7rem);
+			}
+			.content-04__img {
+				position: relative;
+				width: 100%;
+				margin-top: 5rem;
+				@include box-sizing(border-box);
+				padding-left: calc(100% / 12);
+				padding-right: calc(100% / 12);
+				img {
+					position: relative;
+					width: 100%;
+					height: auto;
+					display: block;
+				}
+			}
+		}
+		.content-05 {
+			position: relative;
+			width: 100%;
+			margin-top: 7%;
+			.content-05__img {
+				position: relative;
+				width: 63.4%;
+				margin-left: calc(100% / 12);
+				margin-top: 5rem;
+				img {
+					position: relative;
+					width: 100%;
+					height: auto;
+					display: block;
+				}
+			}
+		}
+	}
+}
+.banners {
+	position: relative;
+	width: 100%;
+	height: 20.5vw;
+	margin-top: 9%;
+	@include flexbox();
+	.banner {
+		position: relative;
+		width: 50%;
+		height: 100%;
+		display: inline-block;
+		&:hover {
+			.banner-img {
+				img {
+					&:nth-of-type(2) {
+						opacity: 1;
+					}
+				}
+			}
+		}
+		.banner-img {
+			position: relative;
+			width: 100%;
+			height: 100%;
+			overflow: hidden;
+			img {
+				position: relative;
+				width: 100%;
+				height: auto;
+				display: block;
+				&:nth-of-type(2) {
+					position: absolute;
+					top: 0;
+					left: 0;
+					right: 0;
+					opacity: 0;
+				}
+			}
+		}
+		.banner-text {
+			position: absolute;
+			width: 100%;
+			height: 100%;
+			top: 0;
+			left: 0;
+			right: 0;
+			text-decoration: none;
+			.banner-text__up {
+				position: relative;
+				width: 100%;
+				font-family: 'Gotham';
+				font-weight: normal;
+				font-style: normal;
+				font-size: 1.1rem;
+				line-height: 1;
+				color: white;
+				text-align: center;
+				margin-top: 17%;
+			}
+			.banner-text__bottom {
+				position: relative;
+				width: 100%;
+				margin-top: 1rem;
+				font-family: 'Gotham';
+				font-weight: bold;
+				font-style: normal;
+				font-size: 1.5rem;
+				line-height: 1;
+				color: white;
+				text-align: center;
+			}
+		}
+	}
 }

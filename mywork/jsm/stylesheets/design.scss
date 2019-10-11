@@ -545,7 +545,7 @@ html {
 						height: 37vw;
 						margin-left: 11%;
 						background-image: url('../../images/d-content-06-3.png');
-						background-size: contain;
+						background-size: 100%;
 						background-repeat: no-repeat;
 						img {
 							position: relative;
@@ -870,7 +870,7 @@ html {
 			}
 			.content-10 {
 				.content-10__pages {
-					margin-top: -24.2vw;
+					margin-top: -24.5vw;
 				}
 			}
 		}
@@ -885,6 +885,11 @@ html {
 			.content-05 {
 				.content-05__filter {
 					padding: 4.1vw 4% 6vw 4%;
+				}
+			}
+			.content-10 {
+				.content-10__pages {
+					margin-top: -25vw;
 				}
 			}
 		}
