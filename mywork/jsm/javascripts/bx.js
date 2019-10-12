@@ -1,15 +1,6 @@
 $(document).ready(function(){
 	$("html").niceScroll();
 
-		// AOS
-	var myAOS = function() {
-		AOS.init({
-		   duration: 1000
-		});
-	}
-
-	myAOS();
-
 	var stickyHeader = function() {
 		var contentsTop = $(".contents").offset().top;
 		var scrollTop = $(window).scrollTop();
@@ -28,6 +19,7 @@ $(document).ready(function(){
 		e.preventDefault();
 		var dimmedHeight = $(".container").height();
 		var dimmedWidth = $(".container").width();
+		var imgHeight = $(".contents").offset().top;
 
 		$(".content-07").show().addClass('pop');
 		$(".content-07").css({
@@ -35,6 +27,11 @@ $(document).ready(function(){
 			"height": dimmedHeight,
 			"background-color": 'rgba(63, 63, 63, 0.7)'
 		})
+		
+		$('html, body').animate({
+            scrollTop : imgHeight
+        }, 1000);
+        
 		/*
 		if($(".content-07").hasClass('pop')) {
 			$(".content-07").hide().removeClass('pop');
